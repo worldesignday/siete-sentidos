@@ -14,3 +14,12 @@
   border-bottom-left-radius: 100%;
   transform: rotate(-15deg);
 }
+
+/* Custom Shape Styles */
+.shape-semicircle {
+  width: 80px;
+  height: 40px;
+  background-color: #00b87c;
+  border-radius: 0 0 80px 80px;
+  transform: rotate(-45deg);
+}
