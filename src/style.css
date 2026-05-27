@@ -5,3 +5,12 @@
 .hero-gradient {
   background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.2) 100%);
 }
+
+/* Custom styles for decorative shapes */
+.shape-blue {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-brand-blue);
+  border-bottom-left-radius: 100%;
+  transform: rotate(-15deg);
+}

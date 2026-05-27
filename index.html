@@ -13,6 +13,9 @@
           --color-brand-purple: #5b4291;
           --color-brand-orange: #f59032;
           --color-brand-yellow: #ffdb4d;
+          --color-brand-blue: #0ea5e9;
+          --color-brand-green: #10b981;
+          --color-brand-red: #ef4444;
         }
     </style>
   </head>
@@ -89,12 +92,85 @@
               Ver temáticas 2026
             </button>
           </div>
-
         </div>
-        
         <!-- Visual Polish: Grass foreground feel -->
         <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
       </section>
+      <!-- block:Filosofia -->
+      <div class="bg-white min-h-screen font-body text-slate-700 selection:bg-brand-green/20">
+        <!-- Main Container -->
+        <main class="max-w-7xl mx-auto px-6 py-12 md:py-20 relative overflow-hidden">
+          
+          <!-- Decorative Shapes -->
+          <div class="absolute top-10 left-10 md:left-20 shape-blue opacity-90 hidden sm:block"></div>
+          <div class="absolute top-1/3 right-10 w-3 h-3 bg-brand-purple rounded-full hidden sm:block"></div>
+
+          <!-- Header Section -->
+          <header class="text-center mb-16 relative z-10">
+            <h1 class="font-display text-4xl md:text-6xl text-emerald-600 leading-tight mb-6 max-w-5xl mx-auto tracking-tight">
+              Hay experiencias que maduran a un niño para toda la vida.
+            </h1>
+            <p class="text-slate-500 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+              Jugar también es madurar. Un campo de verano enfocado en la maduración sensorial, emocional y social para niños de <span class="font-bold text-slate-700">3 a 12 años.</span>
+            </p>
+          </header>
+
+          <!-- Content Grid Section -->
+          <div class="relative">
+            <!-- Subtle Background Blob -->
+            <div class="absolute inset-0 -z-10 bg-slate-50/50 rounded-[4rem] scale-105 blur-3xl opacity-50"></div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+              
+              <!-- Left Image Column -->
+              <div class="rounded-[2.5rem] overflow-hidden shadow-xl transform transition hover:scale-[1.02] duration-300">
+                <img 
+                  src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=800" 
+                  alt="Children playing in the woods" 
+                  class="w-full h-full object-cover min-h-[400px]"
+                />
+              </div>
+
+              <!-- Center Text Card -->
+              <div class="bg-stone-50 rounded-[2.5rem] p-10 md:p-12 flex flex-col items-center text-center justify-center shadow-sm border border-stone-100">
+                <div class="mb-4">
+                  <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/heart.svg" class="w-6 h-6 text-brand-red opacity-80" alt="heart" />
+                </div>
+                
+                <span class="text-brand-red font-bold text-xs tracking-widest uppercase mb-4">
+                  Empatía & Crecimiento
+                </span>
+                
+                <h2 class="font-display text-3xl md:text-4xl text-slate-800 leading-tight mb-8">
+                  Tal vez tu hijo está intentando decir algo...
+                </h2>
+                
+                <div class="space-y-6 text-slate-600 leading-relaxed text-base md:text-lg">
+                  <p>
+                    Muchos niños no necesitan más exigencia... <span class="font-bold text-slate-800">necesitan más experiencias</span> organizadoras. Los comportamientos que a veces nos frustran son a menudo señales de una necesidad sensorial no satisfecha.
+                  </p>
+                  
+                  <p>
+                    En <span class="font-bold text-slate-800">Siete Sentidos</span>, transformamos la frustración en autonomía a través del juego dirigido y la inmersión consciente en la naturaleza.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right Image Column -->
+              <div class="rounded-[2.5rem] overflow-hidden shadow-xl transform transition hover:scale-[1.02] duration-300">
+                <img 
+                  src="https://images.unsplash.com/photo-1502086223501-7ea24e3d82f1?auto=format&fit=crop&q=80&w=800" 
+                  alt="Girls playing outside" 
+                  class="w-full h-full object-cover min-h-[400px]"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- Decorative Footer Blob -->
+        <div class="h-16 w-full bg-gradient-to-t from-stone-50 to-transparent"></div>
+      </div>
+
     </div>
   </body>
 </html>
