@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="src/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="min-h-screen font-body text-white selection:bg-brand-orange selection:text-white">
+      <!-- Header -->
+      <header class="bg-brand-purple px-6 py-3 flex items-center justify-between sticky top-0 z-50 shadow-md">
+        <!-- Logo Left -->
+        <div class="flex items-center gap-3">
+          <div class="relative w-10 h-10 flex items-center justify-center">
+            <!-- Simplified Sun Icon -->
+            <svg viewBox="0 0 100 100" class="w-full h-full text-brand-yellow fill-current">
+              <circle cx="50" cy="65" r="25" />
+              <path d="M50 10 L50 25 M15 35 L28 45 M85 35 L72 45 M10 75 L25 75 M90 75 L75 75" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="flex flex-col leading-tight font-display">
+            <span class="text-[10px] uppercase tracking-wider font-medium opacity-90">Campo de verano</span>
+            <span class="text-sm font-bold uppercase tracking-tight">Siete Sentidos</span>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+          <a href="#" class="hover:text-brand-orange transition-colors">Filosofía</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Test Sensorial</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Universos</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Precios</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Un día en..</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="flex items-center gap-4">
+          <a href="#" class="bg-brand-orange text-white px-6 py-2.5 rounded-full font-display font-semibold text-sm hover:brightness-110 transition-all shadow-lg">
+            Inscribirse
+          </a>
+          <a href="#" class="w-10 h-10 flex items-center justify-center border border-white/20 rounded-full hover:bg-white/10 transition-colors">
+            <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/instagram.svg" alt="Instagram" class="w-5 h-5 invert">
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="relative h-[calc(100vh-64px)] flex flex-col items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+          <img src="https://images.unsplash.com/photo-1472162072142-d5af09a7ffbb?auto=format&fit=crop&q=80&w=2000" 
+               alt="Children lying on grass" 
+               class="w-full h-full object-cover scale-105">
+          <div class="absolute inset-0 bg-black/10"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative z-10 container mx-auto px-4 flex flex-col items-center text-center">
+          
+          <!-- Central Brand Logo -->
+          <div class="mb-8 max-w-md animate-in fade-in zoom-in duration-700">
+            <div class="flex flex-col items-center">
+              <!-- Main Sun Logo -->
+              <div class="relative mb-2">
+                 <svg viewBox="0 0 200 120" class="w-48 md:w-64 text-brand-yellow fill-current drop-shadow-xl">
+                   <!-- Rays -->
+                   <g stroke="currentColor" stroke-width="6" stroke-linecap="round">
+                     <line x1="100" y1="10" x2="100" y2="30" />
+                     <line x1="45" y1="35" x2="60" y2="50" />
+                     <line x1="155" y1="35" x2="140" y2="50" />
+                     <line x1="25" y1="85" x2="45" y2="85" />
+                     <line x1="175" y1="85" x2="155" y2="85" />
+                   </g>
+                   <!-- Sun Body -->
+                   <path d="M40 100 C 40 50, 160 50, 160 100" />
+                 </svg>
+              </div>
+              
+              <h1 class="font-display font-bold leading-none flex flex-col items-center drop-shadow-lg">
+                <span class="text-4xl md:text-6xl tracking-tighter text-brand-orange">SIETE</span>
+                <span class="text-4xl md:text-6xl tracking-tighter text-brand-orange mt-[-5px]">SENTIDOS</span>
+                <span class="text-lg md:text-xl font-medium tracking-widest mt-1 text-white uppercase">Experiencia Sensorial</span>
+              </h1>
+              
+              <!-- Curved underline -->
+              <div class="mt-4 w-32 h-2 bg-emerald-500 rounded-full opacity-90 blur-[1px]"></div>
+            </div>
+          </div>
+
+          <!-- Date Information -->
+          <p class="text-2xl md:text-4xl font-display font-medium text-white mb-10 drop-shadow-md">
+            Del 22 de junio al 31 de julio, 2026
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+            <button class="bg-brand-orange hover:bg-[#e47d21] text-white px-8 py-4 rounded-full font-display font-semibold text-lg transition-all transform hover:scale-105 shadow-2xl active:scale-95">
+              ¿Mi hijo necesita esta experiencia?
+            </button>
+            <button class="bg-white/10 backdrop-blur-md border-2 border-white text-white px-8 py-4 rounded-full font-display font-semibold text-lg transition-all hover:bg-white hover:text-brand-purple active:scale-95">
+              Ver temáticas 2026
+            </button>
+          </div>
+
+        </div>
+        
+        <!-- Visual Polish: Grass foreground feel -->
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+      </section>
+    </div>
+  </body>
+</html>
