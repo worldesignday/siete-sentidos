@@ -24,4 +24,9 @@
   transform: rotate(-45deg);
 }
 
-
+/* Custom styles for icon circles */
+.icon-circle {
+  @apply flex items-center justify-center rounded-full shrink-0;
+  width: 44px;
+  height: 44px;
+}
