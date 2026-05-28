@@ -21,6 +21,8 @@
           --color-light-purple: #7a63b0;
           --color-brand-green: #108b64;
           --color-bg-light: #fdfdfd;
+          --color-primary: #f58220;
+          --color-dark-green: #2d3e34;
         }
     </style>
   </head>
@@ -596,6 +598,101 @@
               </div>
             </div>
           </main>
+
+          <!--***************** Seccion: Formulario ****************-->
+
+          <div class="min-h-screen bg-cover bg-center flex items-center justify-center p-4 md:p-8" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2832&auto=format&fit=crop');">
+              <div class="max-w-6xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                
+                <!-- Left Section: Image and Info -->
+                <div class="lg:w-1/2 relative min-h-[400px] lg:min-h-auto">
+                  <!-- Background Image Layer -->
+                  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1472162072942-cd5147eb3902?q=80&w=2670&auto=format&fit=crop');"></div>
+                  <!-- Dark Overlay -->
+                  <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+                  
+                  <!-- Content Layer -->
+                  <div class="relative z-10 h-full p-8 md:p-12 flex flex-col justify-center text-white">
+                    <h1 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">
+                      Reserva un lugar <br> en la naturaleza.
+                    </h1>
+                    
+                    <p class="font-body text-lg mb-10 opacity-90 leading-relaxed max-w-md">
+                      ¡Inscríbete antes del 5 de junio y <span class="font-bold">obtén un 5% de descuento</span> en el Campo de Verano Siete Sentidos!
+                    </p>
+                    
+                    <div class="space-y-6 font-body">
+                      <div class="flex items-center gap-4">
+                        <div class="bg-black/30 p-2 rounded-lg">
+                          <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/map-pin.svg" class="w-6 h-6 invert" alt="Location">
+                        </div>
+                        <span class="text-sm md:text-base">Hacienda Rincón de Teusacá, La Calera</span>
+                      </div>
+                      
+                      <div class="flex items-center gap-4">
+                        <div class="bg-black/30 p-2 rounded-lg">
+                          <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/clock.svg" class="w-6 h-6 invert" alt="Time">
+                        </div>
+                        <span class="text-sm md:text-base">De 9:00 am a 2:00pm</span>
+                      </div>
+                      
+                      <div class="flex items-center gap-4">
+                        <div class="bg-black/30 p-2 rounded-lg">
+                          <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/calendar.svg" class="w-6 h-6 invert" alt="Calendar">
+                        </div>
+                        <span class="text-sm md:text-base">Temporada Verano 2026</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Section: Form -->
+                <div class="lg:w-1/2 p-8 md:p-16 flex flex-col justify-center">
+                  <form class="space-y-8">
+                    <!-- Name Input -->
+                    <div class="space-y-2">
+                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider font-body">Nombre del acudiente</label>
+                      <input type="text" placeholder="Tu nombre completo" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-primary transition-colors font-body text-gray-700">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <!-- Age Input -->
+                      <div class="space-y-2">
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider font-body">Edad del niño</label>
+                        <input type="text" placeholder="Ej: 7" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-primary transition-colors font-body text-gray-700">
+                      </div>
+                      
+                      <!-- Phone Input -->
+                      <div class="space-y-2">
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider font-body">Teléfono</label>
+                        <input type="text" placeholder="+57" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-primary transition-colors font-body text-gray-700">
+                      </div>
+                    </div>
+
+                    <!-- Week Select -->
+                    <div class="space-y-2">
+                      <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider font-body">Semana de interés</label>
+                      <div class="relative">
+                        <select class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary font-body text-gray-700 cursor-pointer">
+                          <option>Semana 1: Vuelo & Equilibrio</option>
+                          <option>Semana 2: Exploración & Tierra</option>
+                          <option>Semana 3: Agua & Reflejos</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none">
+                          <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/chevron-down.svg" class="w-5 h-5 text-gray-400" alt="Select">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-primary hover:bg-orange-600 text-white font-display font-semibold py-4 rounded-full transition-all duration-300 shadow-lg shadow-primary/30 transform hover:-translate-y-1 active:scale-95">
+                      Enviar y Reservar Cupo
+                    </button>
+                  </form>
+                </div>
+
+              </div>
+            </div>
 
           <!-- Bottom whatsapp -->
           <div class="fixed bottom-3 md:bottom-10 right-2 md:right-10 z-50 scale-80 md:scale-90">
