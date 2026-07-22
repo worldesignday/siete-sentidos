@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="es" class="scroll-smooth">
   <head>
     <!-- ================================================================== -->
     <!-- CONFIGURACIÓN GLOBAL Y ACCESIBILIDAD -->
@@ -9,31 +9,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- ================================================================== -->
-    <!-- SEO ESTÁNDAR - GOOGLE (PRODUCTO BASE) -->
+    <!-- SEO ESTÁNDAR - GOOGLE -->
     <!-- ================================================================== -->
-    <title>Siete Sentidos | Campo de Verano 2026: Jugar también es madurar</title>
-    <meta name="description" content="Un campo de verano consciente en la naturaleza enfocado en la maduración sensorial, emocional y social para niños de 3 a 12 años. Cupos limitados.">
+    <title>Siete Sentidos | Reserva el Campo de Verano 2026 — Cupos Limitados</title>
+    <meta name="description" content="Inscribe a tu hijo al Campo de Verano Siete Sentidos: un espacio en la naturaleza diseñado desde la terapia ocupacional para madurar sensorial, emocional y socialmente. Del 22 de junio al 31 de julio, 2026. Cupos limitados.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://sietesentidosexperienciasensorial.com/">
 
     <!-- ================================================================== -->
-    <!-- PROTOCOLO OPEN GRAPH - WHATSAPP / INSTAGRAM (PRODUCTO BASE) -->
+    <!-- PROTOCOLO OPEN GRAPH - WHATSAPP / INSTAGRAM -->
     <!-- ================================================================== -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sietesentidosexperienciasensorial.com/">
-    <meta property="og:title" content="Siete Sentidos | Campo de Verano 2026">
-    <meta property="og:description" content="Muchos niños no necesitan más exigencia... necesitan más experiencias organizadoras. Descubre un espacio de maduración en la naturaleza.">
+    <meta property="og:title" content="Siete Sentidos | Reserva el Campo de Verano 2026">
+    <meta property="og:description" content="Muchos niños no necesitan más exigencia... necesitan más experiencias organizadoras. Reserva ahora el cupo de tu hijo.">
     <meta property="og:image" content="https://siete-sentidos.netlify.app/src/images/og-share-verano.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="es_CO">
 
     <!-- ================================================================== -->
-    <!-- FAVICONS (ICONOS DE PESTAÑA Y DISPOSITIVOS) -->
+    <!-- FAVICONS -->
     <!-- ================================================================== -->
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="src/style.css" rel="stylesheet">
@@ -41,7 +40,7 @@
         @theme {
           --font-display: "Poppins", sans-serif;
           --font-body: "Inter", sans-serif;
-          
+
           --color-brand-purple: #5b4291;
           --color-brand-orange: #f59032;
           --color-brand-yellow: #ffdb4d;
@@ -58,681 +57,595 @@
           --color-brand-teal: #76e1cc;
         }
     </style>
+    <style>
+      @keyframes pulse-cta {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.04); }
+      }
+      .pulse-cta { animation: pulse-cta 2.2s ease-in-out infinite; }
+    </style>
   </head>
   <body>
     <div class="min-h-screen font-body text-white selection:bg-brand-orange selection:text-white">
-      <!-- Header -->
+
+      <!-- ============ Header ============ -->
       <header class="bg-brand-purple px-6 py-3 flex items-center justify-between sticky top-0 z-50 shadow-md">
-        <!-- Logo Left -->
         <div class="flex items-center gap-3">
-          <div class="relative w-50 h-10 flex items-center justify-center">
-            <!-- Simplified Sun Icon -->
-              <img src="src/images/logo-header-siete-sentidos.svg?auto=format"
-                   alt="Logo Siete Sentidos" 
-                   class="scale-105">
+          <div class="relative w-40 sm:w-50 h-10 flex items-center justify-center">
+            <img src="src/images/logo-header-siete-sentidos.svg?auto=format"
+                 alt="Logo Siete Sentidos"
+                 class="scale-105">
           </div>
         </div>
 
-        <!-- Navigation -->
         <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
-          <a href="#" class="hover:text-brand-orange transition-colors">Filosofía</a>
-          <a href="#" class="hover:text-brand-orange transition-colors">Test Sensorial</a>
-          <a href="#" class="hover:text-brand-orange transition-colors">Universos</a>
-          <a href="#" class="hover:text-brand-orange transition-colors">Precios</a>
-          <a href="#" class="hover:text-brand-orange transition-colors">Un día en..</a>
+          <a href="#metodologia" class="hover:text-brand-orange transition-colors">Metodología</a>
+          <a href="#semanas" class="hover:text-brand-orange transition-colors">Universos</a>
+          <a href="#testimonios" class="hover:text-brand-orange transition-colors">Historias</a>
+          <a href="#precios" class="hover:text-brand-orange transition-colors">Precios</a>
+          <a href="#faq" class="hover:text-brand-orange transition-colors">Preguntas</a>
         </nav>
 
-        <!-- Header Actions -->
         <div class="flex items-center gap-4">
-          <a href="#" class="bg-brand-orange text-white px-6 py-2.5 rounded-full font-display font-semibold text-sm hover:brightness-110 transition-all shadow-lg">
-            Inscribirse
-          </a>
-          <a href="#" class="w-10 h-10 flex items-center justify-center border border-white/20 rounded-full hover:bg-white/10 transition-colors">
-            <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/instagram.svg" alt="Instagram" class="w-5 h-5 invert">
+          <a href="#reserva" class="bg-brand-orange text-white px-5 sm:px-6 py-2.5 rounded-full font-display font-semibold text-sm hover:brightness-110 transition-all shadow-lg">
+            Reservar cupo
           </a>
         </div>
       </header>
 
-      <!-- Hero Section -->
-      <section class="relative h-[calc(100vh-64px)] flex flex-col items-center justify-center overflow-hidden">
-        <!-- Background Image with Overlay -->
+      <!-- ============ Hero: Oferta + Urgencia ============ -->
+      <section class="relative min-h-[calc(100vh-64px)] flex flex-col items-center justify-center overflow-hidden py-16">
         <div class="absolute inset-0 z-0">
-          <img src="src/images/siete-sentidos-hero.webp?auto=format&fit=crop&q=80&w=2000" 
-               alt="Siete Sentidos" 
+          <img src="src/images/siete-sentidos-hero.webp?auto=format&fit=crop&q=80&w=2000"
+               alt="Siete Sentidos"
                class="w-full h-full object-cover scale-105">
-          <div class="absolute inset-0 bg-black/10"></div>
+          <div class="absolute inset-0 bg-black/40"></div>
         </div>
 
-        <!-- Content Container -->
         <div class="relative z-10 container mx-auto px-4 flex flex-col items-center text-center">
-          
-          <!-- Central Brand Logo -->
-          <div class="mb-8 max-w-md animate-in fade-in zoom-in duration-700">
-            <div class="flex flex-col items-center">
-              <!-- Main Logo -->
-              <div class="relative mb-2">
-                 <img src="src/images/logo-main-siete-sentidos.svg?auto=format"
-                   alt="Logo Siete Sentidos" 
-                   class="">
-              </div>
+
+          <span class="inline-flex items-center gap-2 bg-brand-orange/90 text-white text-xs md:text-sm font-bold tracking-widest uppercase px-5 py-2 rounded-full mb-6 shadow-lg">
+            Cupos limitados · Verano 2026
+          </span>
+
+          <h1 class="font-display font-bold text-4xl md:text-6xl leading-tight max-w-4xl mb-6 drop-shadow-md">
+            El verano en que tu hijo aprenda a regularse jugando en la naturaleza.
+          </h1>
+
+          <p class="text-lg md:text-2xl text-white/90 max-w-2xl mb-4 drop-shadow-md">
+            Un campo de verano diseñado desde la terapia ocupacional para la maduración sensorial, emocional y social de niños de <span class="font-bold">3 a 12 años.</span>
+          </p>
+
+          <p class="text-xl md:text-2xl font-display font-medium text-brand-yellow mb-10 drop-shadow-md">
+            Del 22 de junio al 31 de julio, 2026 · Hacienda Rincón de Teusacá, La Calera
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+            <a href="#reserva" class="pulse-cta bg-brand-orange hover:bg-[#e47d21] text-white px-8 py-4 rounded-full font-display font-semibold text-lg transition-all shadow-2xl active:scale-95">
+              Quiero reservar el cupo de mi hijo
+            </a>
+            <a href="#semanas" class="bg-white/10 backdrop-blur-md border-2 border-white text-white px-8 py-4 rounded-full font-display font-semibold text-lg transition-all hover:bg-white hover:text-brand-purple active:scale-95">
+              Ver los 6 universos temáticos
+            </a>
+          </div>
+
+          <p class="text-sm text-white/80 mt-6">
+            5% de descuento inscribiéndote del 2 al 15 de junio · 20% de descuento tomando 5 o 6 semanas
+          </p>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"></div>
+      </section>
+
+      <!-- ============ Dolor / Identificación ============ -->
+      <div class="bg-white font-body text-slate-700">
+        <main class="max-w-5xl mx-auto px-6 py-16 md:py-24 text-center">
+          <span class="text-brand-red font-bold text-xs tracking-widest uppercase mb-4 inline-block">¿Te suena familiar?</span>
+          <h2 class="font-display font-semibold text-3xl md:text-5xl text-slate-800 leading-tight mb-10 max-w-3xl mx-auto">
+            Hay comportamientos que no son "mala conducta"... son necesidades sensoriales pidiendo ayuda.
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left mb-12">
+            <div class="bg-stone-50 rounded-2xl p-6 border border-stone-100">
+              <p class="text-slate-600 leading-relaxed">Se frustra con facilidad, llora o explota ante cambios pequeños en su rutina.</p>
+            </div>
+            <div class="bg-stone-50 rounded-2xl p-6 border border-stone-100">
+              <p class="text-slate-600 leading-relaxed">Le cuesta compartir, esperar su turno o hacer amigos con naturalidad.</p>
+            </div>
+            <div class="bg-stone-50 rounded-2xl p-6 border border-stone-100">
+              <p class="text-slate-600 leading-relaxed">Pasa horas frente a una pantalla y se muestra ansioso o inquieto sin ella.</p>
             </div>
           </div>
 
-          <!-- Date Information -->
-          <p class="text-2xl md:text-4xl font-display font-medium text-white mb-10 drop-shadow-md">
-            Del 22 de junio al 31 de julio, 2026
+          <p class="text-slate-500 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+            En <span class="font-bold text-slate-800">Siete Sentidos</span> transformamos la frustración en autonomía a través del juego dirigido y la inmersión consciente en la naturaleza, desde una mirada profesional de terapia ocupacional.
           </p>
+        </main>
+      </div>
 
-          <!-- Action Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <button class="bg-brand-orange hover:bg-[#e47d21] text-white px-8 py-4 rounded-full font-display font-semibold text-lg transition-all transform hover:scale-105 shadow-2xl active:scale-95">
-              ¿Mi hijo necesita esta experiencia?
-            </button>
-            <button class="bg-white/10 backdrop-blur-md border-2 border-white text-white px-8 py-4 rounded-full font-display font-semibold text-lg transition-all hover:bg-white hover:text-brand-purple active:scale-95">
-              Ver temáticas 2026
-            </button>
-          </div>
-        </div>
-        <!-- Visual Polish: Grass foreground feel -->
-        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-      </section>
-
-      <!-- ************ block:Filosofia ***************-->
-
-      <div class="bg-white min-h-screen font-body text-slate-700 selection:bg-brand-green/20">
-        <!-- Main Container -->
+      <!-- ============ Metodología / Filosofía ============ -->
+      <div id="metodologia" class="bg-white min-h-screen font-body text-slate-700 selection:bg-brand-green/20">
         <main class="max-w-7xl mx-auto px-6 py-12 md:py-20 relative overflow-hidden">
-          
-          <!-- Decorative Shapes -->
           <div class="absolute top-10 left-10 md:left-20 shape-blue opacity-90 hidden sm:block"></div>
           <div class="absolute top-1/3 right-10 w-3 h-3 bg-brand-purple rounded-full hidden sm:block"></div>
 
-          <!-- Header Section -->
           <header class="text-center mb-16 relative z-10">
-            <h1 class="font-display font-[600] text-4xl md:text-6xl text-emerald-600 leading-tight mb-6 max-w-5xl mx-auto tracking-tight">
+            <h2 class="font-display font-[600] text-4xl md:text-6xl text-emerald-600 leading-tight mb-6 max-w-5xl mx-auto tracking-tight">
               Hay experiencias que maduran a un niño para toda la vida.
-            </h1>
+            </h2>
             <p class="text-slate-500 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
               Jugar también es madurar. Un campo de verano enfocado en la maduración sensorial, emocional y social para niños de <span class="font-bold text-slate-700">3 a 12 años.</span>
             </p>
           </header>
 
-          <!-- Content Grid Section -->
           <div class="relative">
-            <!-- Subtle Background Blob -->
             <div class="absolute inset-0 -z-10 bg-slate-50/50 rounded-[4rem] scale-105 blur-3xl opacity-50"></div>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-              
-              <!-- Left Image Column -->
-              <div class=" overflow-hidden transform transition hover:scale-[1.02] duration-300">
-                <img 
-                  src="src/images/experiencias-siete-sentidos-l.webp?auto=format&fit=crop&q=80&w=800" 
-                  alt="Experiencias siete sentidos" 
+              <div class="overflow-hidden transform transition hover:scale-[1.02] duration-300">
+                <img
+                  src="src/images/experiencias-siete-sentidos-l.webp?auto=format&fit=crop&q=80&w=800"
+                  alt="Experiencias siete sentidos"
                   class="w-full object-cover min-h-[400px]"
                 />
               </div>
 
-              <!-- Center Text Card -->
               <div class="bg-stone-50 rounded-[20px] p-10 md:p-12 flex flex-col items-center text-center justify-center shadow-sm border border-stone-100">
                 <div class="mb-4">
                   <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/heart.svg" class="w-6 h-6 text-brand-red opacity-80" alt="heart" />
                 </div>
-                
+
                 <span class="text-brand-red font-bold text-xs tracking-widest uppercase mb-4">
                   Empatía & Crecimiento
                 </span>
-                
-                <h2 class="font-display text-[26px] md:text-[22px]  text-slate-800 leading-tight mb-8">
+
+                <h3 class="font-display text-[26px] md:text-[22px] text-slate-800 leading-tight mb-8">
                   Tal vez tu hijo está intentando decir algo...
-                </h2>
-                
+                </h3>
+
                 <div class="space-y-6 text-slate-600 leading-relaxed text-base">
                   <p>
                     Muchos niños no necesitan más exigencia... <span class="font-bold text-slate-800">necesitan más experiencias</span> organizadoras. Los comportamientos que a veces nos frustran son a menudo señales de una necesidad sensorial no satisfecha.
                   </p>
-                  
+
                   <p>
                     En <span class="font-bold text-slate-800">Siete Sentidos</span>, transformamos la frustración en autonomía a través del juego dirigido y la inmersión consciente en la naturaleza.
                   </p>
                 </div>
               </div>
 
-              <!-- Right Image Column -->
               <div class="overflow-hidden transform transition hover:scale-[1.02] duration-300">
-                <img 
-                  src="src/images/experiencias-siete-sentidos-r.webp?auto=format&fit=crop&q=80&w=800" 
-                  alt="Experiencias siete sentidos" 
+                <img
+                  src="src/images/experiencias-siete-sentidos-r.webp?auto=format&fit=crop&q=80&w=800"
+                  alt="Experiencias siete sentidos"
                   class="w-full object-cover min-h-[400px]"
                 />
               </div>
             </div>
           </div>
-        </main>
-      </div>
 
-      <!-- ************ block:Test ***************-->
-
-      <div class="relative min-h-screen w-full flex items-center justify-center overflow-hidden font-body bg-brand-yellow">
-  
-        <!-- Background Split -->
-        <div class="absolute inset-0 z-0 flex flex-col">
-          <div class="h-1/2 bg-brand-yellow w-full"></div>
-          <div class="h-1/2 bg-brand-purple w-full"></div>
-        </div>
-
-        <!-- Decorative Shapes -->
-        <div class="absolute top-[-40px] left-[10%] w-24 h-24 rounded-full bg-brand-purple opacity-90 z-0"></div>
-        <div class="absolute top-[30%] left-[12%] w-6 h-2 bg-[#38bdf8] rounded-full rotate-45 z-0"></div>
-        <div class="absolute top-[5%] right-[25%] w-3 h-3 rounded-full bg-brand-green z-0"></div>
-        <div class="absolute bottom-[40%] right-[10%] z-0">
-          <div class="w-20 h-10 bg-brand-green rounded-t-full rotate-[140deg]"></div>
-        </div>
-
-        <!-- Main Card Container -->
-        <main class="relative z-10 w-full max-w-2xl px-6 py-12">
-          <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden pt-1 relative">
-            <!-- Top Accent Bar -->
-            <div class="absolute top-0 left-0 w-48 h-2 bg-brand-green/80 rounded-br-lg"></div>
-
-            <div class="p-10 md:p-14">
-              <!-- Header -->
-              <header class="mb-10">
-                <h1 class="font-display text-4xl md:text-5xl text-slate-800 font-bold mb-4">
-                  Explorador de Necesidades
-                </h1>
-                <p class="text-slate-600 text-lg">
-                  Descubre cómo Siete Sentidos puede ayudar a la regulación de tu hijo.
-                </p>
-              </header>
-
-              <!-- Form Step Content -->
-              <section>
-                <p class="font-bold text-brand-orange text-sm tracking-widest mb-6">PASO 1 DE 4</p>
-                
-                <h2 class="font-display text-2xl text-slate-800 mb-2">Sistema Vestibular:</h2>
-                <p class="text-slate-800 text-lg mb-8 leading-relaxed">
-                  ¿Le teme a saltar, columpiarse o busca moverse constantemente sin parar?
-                </p>
-
-                <!-- Options Group -->
-                <div class="space-y-4 mb-10">
-                  <!-- Selected Option -->
-                  <button class="w-full flex items-center p-6 rounded-2xl border-2 border-brand-orange text-left bg-white transition-all hover:bg-orange-50 cursor-pointer">
-                    <span class="text-slate-800 font-medium">Evita actividades de movimiento intenso</span>
-                  </button>
-
-                  <!-- Unselected Option 1 -->
-                  <button class="w-full flex items-center p-6 rounded-2xl border border-slate-200 text-left bg-white transition-all hover:border-brand-orange/50 cursor-pointer">
-                    <span class="text-slate-800 font-medium">Busca movimiento constante (girar, saltar)</span>
-                  </button>
-
-                  <!-- Unselected Option 2 -->
-                  <button class="w-full flex items-center p-6 rounded-2xl border border-slate-200 text-left bg-white transition-all hover:border-brand-orange/50 cursor-pointer">
-                    <span class="text-slate-800 font-medium">Tiene un equilibrio normal para su edad</span>
-                  </button>
-                </div>
-
-                <!-- Action Button -->
-                <button class="bg-brand-orange hover:bg-[#e27d1d] text-white font-bold py-4 px-12 rounded-full text-xl transition-all transform active:scale-95 shadow-md">
-                  Siguiente
-                </button>
-              </section>
+          <!-- Los 7 sentidos -->
+          <div class="mt-16 md:mt-24 max-w-4xl mx-auto text-center">
+            <h3 class="font-display text-2xl md:text-3xl font-bold text-slate-800 mb-4">Trabajamos los 7 sentidos, no solo los 5</h3>
+            <p class="text-slate-500 text-lg mb-10">Visual, Auditivo, Táctil, Propioceptivo, Vestibular, Olfativo y Gustativo.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm font-medium">
+              <span class="bg-brand-purple/10 text-brand-purple rounded-full px-4 py-3">Visual</span>
+              <span class="bg-brand-blue/10 text-brand-blue rounded-full px-4 py-3">Auditivo</span>
+              <span class="bg-brand-orange/10 text-brand-orange rounded-full px-4 py-3">Táctil</span>
+              <span class="bg-brand-green/10 text-brand-green rounded-full px-4 py-3">Propioceptivo</span>
+              <span class="bg-brand-red/10 text-brand-red rounded-full px-4 py-3">Vestibular</span>
+              <span class="bg-brand-teal/10 text-emerald-700 rounded-full px-4 py-3">Olfativo</span>
+              <span class="bg-brand-yellow/20 text-amber-700 rounded-full px-4 py-3">Gustativo</span>
+              <span class="bg-slate-100 text-slate-600 rounded-full px-4 py-3">Social-Emocional</span>
             </div>
           </div>
         </main>
       </div>
 
-      <!-- ************ block:Universos ***************-->
-
-      <div class="bg-primary-purple min-h-screen font-body text-white selection:bg-whatsapp-green selection:text-white pb-20">
-  
-          <!-- Header Title -->
-          <header class="pt-12 pb-16 text-center px-4">
-            <!--<div class="flex justify-center mb-4">
-               <div class="relative w-12 h-12">
-                  <span class="absolute top-0 left-0 w-2 h-6 bg-yellow-300 rounded-full rotate-[-45deg]"></span>
-                  <span class="absolute top-0 right-0 w-2 h-6 bg-lime-400 rounded-full rotate-[45deg]"></span>
-                  <span class="absolute bottom-0 left-4 w-2 h-6 bg-lime-400 rounded-full"></span>
-               </div>
-            </div>-->
-            <h1 class="font-display text-5xl md:text-5xl font-bold  mb-4 max-w-6xl mx-auto">Un verano para explorar, jugar, crear, y crecer con todos sus sentidos</h1>
-            <p class="text-white text-lg">
-                  Una Experiencia Sensorial.. Visual, Auditiva, Táctil, Propioceptivo, Vestibular, Olfativa y Gustativa.
-                </p>
-          </header>
-
-          <!-- Main Content Sections -->
-          <main class="max-w-6xl mx-auto px-6 space-y-24 md:space-y-10">
-            <!-- Week 1 Section -->
-            <section class="flex flex-col md:flex-row items-center gap-12">
-              <div class="md:w-1/2 space-y-4">
-                <span class="inline-block px-6 py-2 border border-white/40 rounded-full font-medium bg-white/10 text-sm">Semana 1</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-yellow-400">El Bosque de los Misterios Perdidos</h2>
-                <span class="italic">22 al 26 de Junio (Semana completa)</span>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">
-                  Algo misterioso ocurre en el bosque. Entre senderos, árboles y rincones secretos seguiremos pistas, resolveremos enigmas y descubriremos mensajes ocultos en la naturaleza.
-                </p>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">★ Una semana para observar, escuchar y dejarse sorprender por los secretos del bosque.</p>
-                <h3 class="text-[20px]"><b>Énfasis sensorial de la semana</b></h3>
-                <p>Fortaleceremos la atención visual y auditiva, el seguimiento de instrucciones y la capacidad de descubrir pistas y detalles en el entorno. Las aventuras del bosque favorecerán además el desarrollo de los sistemas vestibular y propioceptivo mediante recorridos, exploraciones y desafíos al aire libre.</p>
-
-                <a href="#" class="inline-flex items-center gap-2 bg-whatsapp-green hover:bg-green-500 transition-colors px-6 py-3 rounded-full font-semibold text-white shadow-lg">
-                  <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WhatsApp">
-                  Hablar con un asesor
-                </a>
-              </div>
-              <div class="md:w-1/2 relative">
-                <div class="absolute top-[-10%] left-[30%] w-6 h-2 bg-[#ffdb4d] rounded-full rotate-135 z-0"></div>
-                <div class="rounded-[20px] overflow-hidden transform rotate-2 shadow-2xl bg-gray-200">
-                  <img src="src/images/semana1.webp?q=80&w=1200&auto=format&fit=crop" alt="El Bosque de los Misterios Perdidos" class="w-full h-100 object-cover">
-                </div>
-              </div>
-            </section>
-
-            <!-- Week 2 Section -->
-            <section class="flex flex-col-reverse md:flex-row items-center gap-12 relative">
-              <div class="absolute top-[10%] left-[10%] w-3 h-3 rounded-full bg-[#f59032] z-0"></div>
-              <div class="md:w-1/2 relative">
-                <div class="rounded-[20px] overflow-hidden transform -rotate-2 shadow-2xl bg-gray-200">
-                  <img src="src/images/semana2.webp?q=80&w=1200&auto=format&fit=crop" alt="Copa Mundial Sensorial" class="w-full h-100 object-cover">
-                </div>
-              </div>
-              <div class="md:w-1/2 space-y-4 text-left">
-                <span class="inline-block px-6 py-2 border border-white/40 rounded-full font-medium bg-white/10 text-sm">Semana 2</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-cyan-400">Copa Mundial Sensorial</h2>
-                <span class="italic">30 de junio al 3 de julio (Semana de puente)</span>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">
-                  Llegó la emoción del gran campeonato! Entre partidos, circuitos y desafíos deportivos descubriremos que lo más importante no es ganar, sino divertirnos, superarnos y trabajar en equipo.
-                </p>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">★ Una semana para moverse, jugar y celebrar cada logro.</p>
-                <h3 class="text-[20px]"><b>Énfasis sensorial de la semana</b></h3>
-                <p class="text-white/90 text-sm md:text-base leading-relaxed max-w-md">
-                  Fortaleceremos la coordinación corporal, el equilibrio, la planeación motora y el trabajo en equipo a través del juego y el movimiento. Las actividades deportivas tendrán un importante énfasis en los sistemas propioceptivo y vestibular, favoreciendo la confianza corporal, la organización motora y el disfrute de la actividad física.
-                </p>
-                <a href="#" class="inline-flex items-center gap-2 bg-whatsapp-green hover:bg-green-500 transition-colors px-6 py-3 rounded-full font-semibold text-white shadow-lg">
-                  <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WhatsApp">
-                  Hablar con un asesor
-                </a>
-              </div>
-            </section>
-
-            <!-- Week 3 Section -->
-            <section class="flex flex-col md:flex-row items-center gap-12 pb-0 relative">
-              <div class="absolute top-[30%] left-[40%] w-6 h-2 bg-[#FE7DAD] rounded-full rotate-45 z-0"></div>
-              <div class="md:w-1/2 space-y-4">
-                <span class="inline-block px-6 py-2 border border-white/40 rounded-full font-medium bg-white/10 text-sm">Semana 3</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-rose-400">Astrocamp: Episodios Espaciales</h2>
-                <span class="italic">6 al 10 de Julio (Semana completa)</span>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">
-                  ¡Es hora de despegar la nave! Tal vez encontremos algunas rocas lunares o arena de Venus... Una experiencia táctil de otro mundo. Será una semana de contacto con las texturas naturales del campo y los animales, mientras exploramos los misterios del universo a través del juego, la imaginación y la aventura.
-                </p>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">
-                  ★ ¡Esta es una semana para tocar las estrellas!
-                </p>
-                <h3 class="text-[20px]"><b>Énfasis sensorial de la semana</b></h3>
-                <p class="text-white/90 text-sm md:text-base leading-relaxed max-w-md">
-                  Los exploradores fortalecerán la exploración táctil a través del contacto con diferentes texturas naturales, favoreciendo el desarrollo de la atención, la escritura y las habilidades de socialización, mientras comparten experiencias y misiones junto a sus compañeros de aventura.
-                </p>
-                <a href="#" class="inline-flex items-center gap-2 bg-whatsapp-green hover:bg-green-500 transition-colors px-6 py-3 rounded-full font-semibold text-white shadow-lg">
-                  <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WhatsApp">
-                  Hablar con un asesor
-                </a>
-              </div>
-              <div class="md:w-1/2 relative">
-                <div class="rounded-[20px] overflow-hidden transform rotate-2 shadow-2xl bg-gray-200">
-                  <img src="src/images/semana3.webp?q=80&w=1200&auto=format&fit=crop" alt="Astrocamp: Episodios Espaciales" class="w-full h-100 object-cover">
-                </div>
-              </div>
-            </section>
-
-            <!-- Week 4 Section -->
-            <section class="flex flex-col-reverse md:flex-row items-center gap-12 relative">
-              <div class="absolute top-[10%] left-[10%] w-3 h-3 rounded-full bg-[#f59032] z-0"></div>
-              <div class="md:w-1/2 relative">
-                <div class="rounded-[20px] overflow-hidden transform -rotate-2 shadow-2xl bg-gray-200">
-                  <img src="src/images/semana4.webp?q=80&w=1200&auto=format&fit=crop" alt="Círculo de la Fortaleza" class="w-full h-100 object-cover">
-                </div>
-              </div>
-              <div class="md:w-1/2 space-y-4 text-left">
-                <span class="inline-block px-6 py-2 border border-white/40 rounded-full font-medium bg-white/10 text-sm">Semana 4</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-cyan-400">Círculo de la Fortaleza</h2>
-                <span class="italic">13 al 17 de Julio (Semana completa)</span>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">
-                  ¡Es momento de descubrir toda nuestra fuerza! Durante esta semana participaremos en circuitos motores, senderismo, retos cooperativos y actividades llenas de movimiento, donde cada explorador podrá poner a prueba su perseverancia, confianza y capacidad para superar desafíos.
-                </p>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">★ ¡Una semana de fuerza, juego y perseverancia!</p>
-                <h3 class="text-[20px]"><b>Énfasis sensorial de la semana</b></h3>
-                <p class="text-white/90 text-sm md:text-base leading-relaxed max-w-md">
-                  Los exploradores fortalecerán la conciencia corporal, la fuerza, la coordinación y la perseverancia mediante actividades físicas y desafíos al aire libre que favorecerán la confianza y la capacidad de superar retos.
-                </p>
-                <a href="#" class="inline-flex items-center gap-2 bg-whatsapp-green hover:bg-green-500 transition-colors px-6 py-3 rounded-full font-semibold text-white shadow-lg">
-                  <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WhatsApp">
-                  Hablar con un asesor
-                </a>
-              </div>
-            </section>
-
-            <!-- Week 5 Section -->
-            <section class="flex flex-col md:flex-row items-center gap-12">
-              <div class="md:w-1/2 space-y-4">
-                <span class="inline-block px-6 py-2 border border-white/40 rounded-full font-medium bg-white/10 text-sm">Semana 5</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-yellow-400">El Laboratorio de los Sentidos</h2>
-                <span class="italic">21 al 24 de julio (Semana de puente)</span>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">
-                  ¡Las puertas del laboratorio están abiertas! Entre ingredientes misteriosos, aromas fascinantes y deliciosas creaciones, descubriremos cómo nuestros sentidos nos ayudan a explorar el mundo de una manera completamente nueva.
-                </p>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md"> Una semana para oler, saborear, experimentar y sorprenderse.</p>
-                <h3 class="text-[20px]"><b>Énfasis sensorial de la semana</b></h3>
-                <p>Los exploradores fortalecerán los sentidos del olfato y el gusto a través de experiencias culinarias, juegos sensoriales y actividades de exploración, desarrollando la atención, la curiosidad y la capacidad de reconocer y disfrutar diferentes aromas y sabores de una manera divertida y significativa.</p>
-
-                <a href="#" class="inline-flex items-center gap-2 bg-whatsapp-green hover:bg-green-500 transition-colors px-6 py-3 rounded-full font-semibold text-white shadow-lg">
-                  <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WhatsApp">
-                  Hablar con un asesor
-                </a>
-              </div>
-              <div class="md:w-1/2 relative">
-                <div class="absolute top-[-10%] left-[30%] w-6 h-2 bg-[#ffdb4d] rounded-full rotate-135 z-0"></div>
-                <div class="rounded-[20px] overflow-hidden transform rotate-2 shadow-2xl bg-gray-200">
-                  <img src="src/images/semana5.webp?q=80&w=1200&auto=format&fit=crop" alt="Vuelo & Equilibrio" class="w-full h-100 object-cover">
-                </div>
-              </div>
-            </section>
-
-            <!-- Week 6 Section -->
-            <section class="flex flex-col-reverse md:flex-row items-center gap-12 relative">
-              <div class="absolute top-[10%] left-[10%] w-3 h-3 rounded-full bg-[#f59032] z-0"></div>
-              <div class="md:w-1/2 relative">
-                <div class="rounded-[20px] overflow-hidden transform -rotate-2 shadow-2xl bg-gray-200">
-                  <img src="src/images/semana6.webp?q=80&w=1200&auto=format&fit=crop" alt="¡A la Mar!" class="w-full h-100 object-cover">
-                </div>
-              </div>
-              <div class="md:w-1/2 space-y-4 text-left">
-                <span class="inline-block px-6 py-2 border border-white/40 rounded-full font-medium bg-white/10 text-sm">Semana 6</span>
-                <h2 class="font-display text-3xl md:text-4xl font-bold text-cyan-400">¡A la Mar!</h2>
-                <span class="italic">27 al 31 julio (Semana completa)</span>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">
-                  ¡Es momento de zarpar hacia la última aventura del verano! Construiremos nuestras embarcaciones, diseñaremos banderas y enfrentaremos divertidos desafíos marineros mientras navegamos juntos en busca de nuevas historias y grandes recuerdos.
-                </p>
-                <p class="text-white/70 text-sm md:text-base leading-relaxed max-w-md">★ Una semana para crear, construir y trabajar en equipo.</p>
-                <h3 class="text-[20px]"><b>Énfasis sensorial de la semana</b></h3>
-                <p class="text-white/90 text-sm md:text-base leading-relaxed max-w-md">
-                  Los exploradores fortalecerán la motricidad fina mediante actividades de construcción, diseño y creación, desarrollando la coordinación ojo-mano, la creatividad y el trabajo en equipo mientras preparan sus embarcaciones para esta gran travesía final.
-                </p>
-                <a href="#" class="inline-flex items-center gap-2 bg-whatsapp-green hover:bg-green-500 transition-colors px-6 py-3 rounded-full font-semibold text-white shadow-lg">
-                  <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WhatsApp">
-                  Hablar con un asesor
-                </a>
-              </div>
-            </section>
-
-            <!-- Reservation Section -->
-            <section class="pt-10 space-y-12">
-              <div class="text-center space-y-4">
-                <h2 class="font-display text-4xl font-bold">Reserva un lugar</h2>
-                <p class="text-white/90 text-lg">
-                  ¡Inscríbete del <span class="font-bold">2 al 15 de junio</span> y obtén un <span class="font-bold text-yellow-300">5% de descuento</span> en el Campo de Verano Siete Sentidos!
-                </p>
-                <p class="text-white/90 text-lg">
-                  ¡ Toma 5 o 6 semanas del campo de verano y obtén un <span class="font-bold text-yellow-300">20% de descuento</span> del Campo de Verano Siete Sentidos!
-                </p>
-              </div>
-
-              <!-- Pricing Cards -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Card 1 -->
-                <div class="bg-white rounded-2xl p-8 flex flex-col text-slate-800 shadow-xl border border-white/20">
-                  <div class="text-center mb-6">
-                    <span class="text-sm font-medium bg-slate-100 px-4 py-1 rounded-full text-slate-600">Semana de puente (4 días)</span>
-                    <div class="text-4xl font-bold mt-4 text-slate-900">$800.000</div>
-                    <div class="text-slate-400 text-sm mt-1">Horario: 9:00 am a 2:00 pm</div>
-                  </div>
-                  <div class="flex-grow space-y-4 my-6 border-t border-slate-100 pt-6">
-                    <div class="flex items-center gap-3 text-sm">
-                      <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
-                      <span>Toda la experiencia de 4 días</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-sm">
-                      <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
-                      <span>Inscripción temprana 20% (Antes del 2 de Junio de 2026)</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-sm">
-                      <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
-                      <span>Inscripción previa 5%( Del 2 al 15 de Junio de 2026)</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-sm">
-                      <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
-                      <span>Para hermanos y primos 5%</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-sm text-slate-400">
-                      <img src="src/images/pricing-checkbox-g.svg" class="w-5 h-5 text-slate-300" alt="Check">
-                      <span>*Almuerzo(opcional): $150.000 </span>
-                    </div>
-                    <div class="flex items-center gap-3 text-sm text-slate-400">
-                      <img src="src/images/pricing-checkbox-g.svg" class="w-5 h-5 text-slate-300" alt="Check">
-                      <span>*Transporte(opcional): $200.000 </span>
-                    </div>
-                  </div>
-                  <a href="#" class="w-full flex justify-center items-center gap-2 bg-whatsapp-green py-3 rounded-full font-bold text-white hover:opacity-90 transition-opacity">
-                    Hablar con un asesor
-                    <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WA">
-                  </a>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-white rounded-2xl p-8 flex flex-col text-slate-800 shadow-xl border-4 border-whatsapp-green/20">
-                  <div class="text-center mb-6">
-                    <span class="text-sm font-medium bg-slate-100 px-4 py-1 rounded-full text-slate-600">Semana Completa (5 días)</span>
-                    <div class="text-4xl font-bold mt-4 text-slate-900">$1.000.000</div>
-                    <div class="text-slate-400 text-sm mt-1">Horario: 9:00 am a 2:00 pm</div>
-                  </div>
-                  <div class="flex-grow space-y-4 my-6 border-t border-slate-100 pt-6">
-                    <div class="flex items-center gap-3 text-sm">
-                      <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
-                      <span>Toda la experiencia de 5 días</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-sm">
-                      <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
-                      <span>Inscripción temprana 20% (Antes del 2 de Junio de 2026)</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-sm">
-                      <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
-                      <span>Inscripción previa 5%( Del 2 al 15 de Junio de 2026)</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-sm">
-                      <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
-                      <span>Para hermanos y primos 5%</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-sm text-slate-400">
-                      <img src="src/images/pricing-checkbox-g.svg" class="w-5 h-5 text-slate-300" alt="Check">
-                      <span>*Almuerzo(opcional): $150.000 </span>
-                    </div>
-                    <div class="flex items-center gap-3 text-sm text-slate-400">
-                      <img src="src/images/pricing-checkbox-g.svg" class="w-5 h-5 text-slate-300" alt="Check">
-                      <span>*Transporte(opcional): $200.000 </span>
-                    </div>
-                  </div>
-                  <a href="#" class="w-full flex justify-center items-center gap-2 bg-whatsapp-green py-3 rounded-full font-bold text-white hover:opacity-90 transition-opacity">
-                    Hablar con un asesor
-                    <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WA">
-                  </a>
-                </div>
-              </div>
-              <div class="text-center space-y-4">
-                <p class="text-white/90 text-md">
-                  *Las rutas y el almuerzo no tienen descuento
-                </p>
-              </div>
-
-
-            </section>
-          </main>
+      <!-- ============ Un día en... (condensado) ============ -->
+      <div class="bg-bg-light font-body text-slate-700 py-16 px-4 md:px-8 lg:px-16">
+        <div class="max-w-5xl mx-auto text-center mb-14">
+          <h2 class="font-display text-3xl md:text-5xl text-brand-green font-bold leading-tight mb-4">Así se siente un día en Siete Sentidos</h2>
+          <img src="src/images/logo-siete-sentidos.svg" alt="Siete Sentidos" class="mx-auto h-16 mt-6">
         </div>
-
-        <!-- ************Seccion: Un dia en *********-->
-
-        <div class="bg-bg-light font-body text-slate-700 min-h-screen py-12 px-4 md:px-8 lg:px-16 overflow-hidden">
-          <main class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-11 gap-8 items-start relative">
-            
-            <!-- Left Column (Cards) -->
-            <div class="lg:col-span-4 space-y-24">
-              <!-- Top Left Card -->
-              <div class="relative group">
-                <div class="bg-white transform -rotate-1 transition-transform group-hover:rotate-0">
-                  <img src="src/images/dia1.png ">
-                  
-                </div>
-                <div class="mt-8 px-4">
-                  <span class="text-brand-green text-5xl font-serif leading-none block h-6">“</span>
-                  <p class="text-sm leading-relaxed text-slate-600 italic">
-                    Llegamos sin conocernos y con algo de timidez. Pero después de ayudarnos a cruzar el puente de troncos y compartir el almuerzo bajo los árboles, nos convertimos en mejores amigas. Todo es más divertido cuando tienes a alguien con quien explorar.
-                  </p>
-                  <p class="text-xs font-bold text-slate-400 mt-2">Vale (9 años) y Juli (10 años)</p>
-                </div>
-              </div>
-
-              <!-- Bottom Left Card -->
-              <div class="relative group">
-                <div class="bg-white transform rotate-1 transition-transform group-hover:rotate-0">
-                  <img src="src/images/dia2.png ">
-                  
-                </div>
-                <div class="mt-8 px-4">
-                  <span class="text-brand-green text-5xl font-serif leading-none block h-6">“</span>
-                  <p class="text-sm leading-relaxed text-slate-600 italic">
-                    En casa se frustraba mucho si se salía de la línea al colorear o si se manchaba las manos. Verla aquí, disfrutando el proceso con tanta calma, me demostró cómo este lugar transforma el juego en pura seguridad interna.
-                  </p>
-                  <p class="text-xs font-bold text-slate-400 mt-2">Mamá de Mariana (7 años)</p>
-                </div>
-              </div>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="text-center bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+            <div class="w-12 h-12 mx-auto rounded-full bg-brand-green flex items-center justify-center shadow-lg mb-4">
+              <img src="src/images/icon-8am.svg" class="w-6 h-6">
             </div>
-
-            <!-- Center Column (Timeline) -->
-            <div class="lg:col-span-3 h-full flex flex-col items-center py-12 relative">
-              <h1 class="font-display text-center text-brand-green text-[36px] font-medium leading-tight">
-                Así se siente<br>
-                <span class="font-bold">un día en..</span>
-              </h1>
-              <!-- Sun Logo -->
-              <div class="mt-8 flex flex-col items-center relative z-10 mb-16 md:mb-32 bg-white">
-                  <img src="src/images/logo-siete-sentidos.svg" alt="Siete Sentidos">
-              </div>
-              <!-- Vertical line -->
-              <div class="absolute top-[15%] bottom-0 left-1/2 -translate-x-1/2 w-0.5 bg-slate-200"></div>
-
-              <!-- Point 1 -->
-              <div class="relative w-full mb-32 flex items-center justify-center">
-                <div class="absolute right-[55%] text-right w-32 pr-4">
-                  <p class="font-bold text-lg text-slate-800">08:30 AM</p>
-                  <p class="text-xs text-slate-500">Encuentro en el Bosque</p>
-                </div>
-                <div class="z-10 w-12 h-12 rounded-full bg-brand-green flex items-center justify-center shadow-lg border-4 border-white">
-                  <img src="src/images/icon-8am.svg" class="w-6 h-6">
-                </div>
-                <div class="absolute left-[55%] w-48 pl-4">
-                  <p class="text-xs leading-tight text-slate-600">Despertar entre la naturaleza. Dejamos atrás las pantallas para respirar el aire fresco de la Hacienda.</p>
-                </div>
-              </div>
-
-              <!-- Point 2 -->
-              <div class="relative w-full mb-32 flex items-center justify-center">
-                <div class="absolute right-[55%] text-right w-44 pr-4">
-                  <p class="text-xs leading-tight text-slate-600 ">Sentir el barro en las manos, escalar árboles o saltar riachuelos. Experiencias que organizan el sistema nervioso.</p>
-                </div>
-                <div class="z-10 w-12 h-12 rounded-full bg-brand-green flex items-center justify-center shadow-lg border-4 border-white">
-                  <img src="src/images/icon-10am.svg" class="w-6 h-6 ">
-                </div>
-                <div class="absolute left-[55%] w-40 pl-4">
-                  <p class="font-bold text-lg text-slate-800">10:30 AM</p>
-                  <p class="text-xs text-slate-500">Juego de Regulación</p>
-                </div>
-              </div>
-
-              <!-- Point 3 -->
-              <div class="relative w-full mb-32 flex items-center justify-center">
-                <div class="absolute right-[55%] text-right w-32 pr-4">
-                  <p class="font-bold text-lg text-slate-800">01:00 PM</p>
-                  <p class="text-xs text-slate-500">Almuerzo Consciente</p>
-                </div>
-                <div class="z-10 w-12 h-12 rounded-full bg-brand-green flex items-center justify-center shadow-lg border-4 border-white">
-                  <img src="src/images/icon-1pm.svg" class="w-6 h-6 ">
-                </div>
-                <div class="absolute left-[55%] w-48 pl-4">
-                  <p class="text-xs leading-tight text-slate-600">Nutrición compartida bajo el dosel del bosque. Conversaciones reales y descanso integrador.</p>
-                </div>
-              </div>
-
-              <!-- Point 4 -->
-              <div class="relative w-full mb-12 flex items-center justify-center">
-                <div class="absolute right-[55%] text-right w-44 pr-4">
-                  <p class="text-xs leading-tight text-slate-600 ">El día termina con la mente tranquila, el cuerpo regulado y el corazón contento. Los niños regresan con ganas de volver a explorar mañana.</p>
-                </div>
-                <div class="z-10 w-12 h-12 rounded-full bg-brand-green flex items-center justify-center shadow-lg border-4 border-white">
-                  <img src="src/images/icon-3pm.svg" class="w-6 h-6">
-                </div>
-                <div class="absolute left-[55%] w-40 pl-4">
-                  <p class="font-bold text-lg text-slate-800">03:30 PM</p>
-                  <p class="text-xs text-slate-500">Regreso con Historias</p>
-                </div>
-              </div>
-              
-              <!-- Blue Dot decoration -->
-              <div class="absolute top-1/4 -left-12 w-2.5 h-2.5 rounded-full bg-sky-400"></div>
+            <p class="font-bold text-slate-800">08:30 AM</p>
+            <p class="text-xs text-slate-500 mb-2">Encuentro en el Bosque</p>
+            <p class="text-xs text-slate-600 leading-tight">Dejamos atrás las pantallas para respirar el aire fresco de la Hacienda.</p>
+          </div>
+          <div class="text-center bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+            <div class="w-12 h-12 mx-auto rounded-full bg-brand-green flex items-center justify-center shadow-lg mb-4">
+              <img src="src/images/icon-10am.svg" class="w-6 h-6">
             </div>
-
-            <!-- Right Column (Cards) -->
-            <div class="lg:col-span-4 space-y-24 pl-0 md:pl-20">
-              <!-- Top Right Card -->
-              <div class="relative group">
-                <div class="bg-white transform rotate-1 transition-transform group-hover:rotate-0">
-                  
-                  <img src="src/images/dia3.png">
-                  
-                </div>
-                <div class="mt-8 px-4">
-                  <span class="text-brand-green text-5xl font-serif leading-none block h-6">“</span>
-                  <p class="text-sm leading-relaxed text-slate-600 italic">
-                    Al principio me daba miedo intentar cosas nuevas sola y prefería quedarme mirando. Pero aquí descubrí que mi cuerpo es fuerte y capaz de superar cualquier reto.
-                  </p>
-                  <p class="text-xs font-bold text-slate-400 mt-2">Sofi (8 años)</p>
-                </div>
-              </div>
-
-              <!-- Bottom Right Card -->
-              <div class="relative group">
-                <div class="bg-white transform -rotate-1 transition-transform group-hover:rotate-0">
-                  <img src="src/images/dia4.png">
-                  
-                </div>
-                <div class="mt-8 px-4">
-                  <span class="text-brand-green text-5xl font-serif leading-none block h-6">“</span>
-                  <p class="text-sm leading-relaxed text-slate-600 italic">
-                    En la ciudad todo va demasiado rápido y Mateo solía abrumarse con facilidad. Verlo aquí, sentado en el pasto, regulando su propia energía para ganarse la confianza de un amigo de cuatro patas, me demostró la magia de este entorno.
-                  </p>
-                  <p class="text-xs font-bold text-slate-400 mt-2">Mamá de Mateo (6 años)</p>
-                </div>
-              </div>
+            <p class="font-bold text-slate-800">10:30 AM</p>
+            <p class="text-xs text-slate-500 mb-2">Juego de Regulación</p>
+            <p class="text-xs text-slate-600 leading-tight">Barro en las manos, árboles y riachuelos: experiencias que organizan el sistema nervioso.</p>
+          </div>
+          <div class="text-center bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+            <div class="w-12 h-12 mx-auto rounded-full bg-brand-green flex items-center justify-center shadow-lg mb-4">
+              <img src="src/images/icon-1pm.svg" class="w-6 h-6">
             </div>
-          </main>
+            <p class="font-bold text-slate-800">01:00 PM</p>
+            <p class="text-xs text-slate-500 mb-2">Almuerzo Consciente</p>
+            <p class="text-xs text-slate-600 leading-tight">Nutrición compartida bajo el dosel del bosque y descanso integrador.</p>
+          </div>
+          <div class="text-center bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+            <div class="w-12 h-12 mx-auto rounded-full bg-brand-green flex items-center justify-center shadow-lg mb-4">
+              <img src="src/images/icon-3pm.svg" class="w-6 h-6">
+            </div>
+            <p class="font-bold text-slate-800">03:30 PM</p>
+            <p class="text-xs text-slate-500 mb-2">Regreso con Historias</p>
+            <p class="text-xs text-slate-600 leading-tight">Mente tranquila, cuerpo regulado y ganas de volver a explorar mañana.</p>
+          </div>
         </div>
-    </div>
-<!--***************** Seccion: Formulario ****************-->
+      </div>
 
-    <div class="min-h-screen bg-cover bg-center flex items-center justify-center p-4 md:p-8" style="background-image: url('src/images/form-siete-sentidos.webp?q=80&w=2832&auto=format&fit=crop');">
-        <div class="max-w-6xl w-full rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
-          
-          <!-- Left Section: Image and Info -->
-          <div class="lg:w-1/2 relative min-h-[400px] lg:min-h-auto bg-black/45">     
-            <!-- Content Layer -->
-            <div class="relative z-10 h-full p-8 md:p-12 flex flex-col justify-center text-white">
-              <h1 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">
-                Reserva un lugar <br> en la naturaleza.
-              </h1>
-              
-              <p class="font-body text-lg mb-10 opacity-90 leading-relaxed max-w-md">
-                ¡Inscríbete antes del 5 de junio y <span class="font-bold">obtén un 5% de descuento</span> en el Campo de Verano Siete Sentidos!
+      <!-- ============ Universos / Semanas ============ -->
+      <div id="semanas" class="bg-primary-purple font-body text-white selection:bg-whatsapp-green selection:text-white pb-20">
+
+        <header class="pt-12 pb-16 text-center px-4">
+          <h2 class="font-display text-4xl md:text-5xl font-bold mb-4 max-w-6xl mx-auto">Un verano para explorar, jugar, crear, y crecer con todos sus sentidos</h2>
+          <p class="text-white text-lg">
+            Elige una semana, varias, o todo el verano. Seis universos temáticos diseñados con propósito sensorial.
+          </p>
+        </header>
+
+        <main class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Semana 1 -->
+          <div class="bg-white/5 rounded-[20px] overflow-hidden border border-white/10 flex flex-col">
+            <img src="src/images/semana1.webp?q=80&w=1200&auto=format&fit=crop" alt="El Bosque de los Misterios Perdidos" class="w-full h-48 object-cover">
+            <div class="p-6 flex-grow flex flex-col gap-2">
+              <span class="inline-block w-fit px-4 py-1 border border-white/40 rounded-full font-medium bg-white/10 text-xs">Semana 1 · 22 al 26 de Junio</span>
+              <h3 class="font-display text-xl font-bold text-yellow-400">El Bosque de los Misterios Perdidos</h3>
+              <p class="text-white/70 text-sm leading-relaxed">Seguiremos pistas y descubriremos mensajes ocultos en la naturaleza. Énfasis en atención visual, auditiva y sistemas vestibular/propioceptivo.</p>
+            </div>
+          </div>
+
+          <!-- Semana 2 -->
+          <div class="bg-white/5 rounded-[20px] overflow-hidden border border-white/10 flex flex-col">
+            <img src="src/images/semana2.webp?q=80&w=1200&auto=format&fit=crop" alt="Copa Mundial Sensorial" class="w-full h-48 object-cover">
+            <div class="p-6 flex-grow flex flex-col gap-2">
+              <span class="inline-block w-fit px-4 py-1 border border-white/40 rounded-full font-medium bg-white/10 text-xs">Semana 2 · 30 jun al 3 jul (puente)</span>
+              <h3 class="font-display text-xl font-bold text-cyan-400">Copa Mundial Sensorial</h3>
+              <p class="text-white/70 text-sm leading-relaxed">Circuitos y desafíos deportivos para fortalecer coordinación, equilibrio y trabajo en equipo.</p>
+            </div>
+          </div>
+
+          <!-- Semana 3 -->
+          <div class="bg-white/5 rounded-[20px] overflow-hidden border border-white/10 flex flex-col">
+            <img src="src/images/semana3.webp?q=80&w=1200&auto=format&fit=crop" alt="Astrocamp: Episodios Espaciales" class="w-full h-48 object-cover">
+            <div class="p-6 flex-grow flex flex-col gap-2">
+              <span class="inline-block w-fit px-4 py-1 border border-white/40 rounded-full font-medium bg-white/10 text-xs">Semana 3 · 6 al 10 de Julio</span>
+              <h3 class="font-display text-xl font-bold text-rose-400">Astrocamp: Episodios Espaciales</h3>
+              <p class="text-white/70 text-sm leading-relaxed">Una experiencia táctil de otro mundo entre texturas naturales y misiones de imaginación.</p>
+            </div>
+          </div>
+
+          <!-- Semana 4 -->
+          <div class="bg-white/5 rounded-[20px] overflow-hidden border border-white/10 flex flex-col">
+            <img src="src/images/semana4.webp?q=80&w=1200&auto=format&fit=crop" alt="Círculo de la Fortaleza" class="w-full h-48 object-cover">
+            <div class="p-6 flex-grow flex flex-col gap-2">
+              <span class="inline-block w-fit px-4 py-1 border border-white/40 rounded-full font-medium bg-white/10 text-xs">Semana 4 · 13 al 17 de Julio</span>
+              <h3 class="font-display text-xl font-bold text-cyan-400">Círculo de la Fortaleza</h3>
+              <p class="text-white/70 text-sm leading-relaxed">Circuitos motores, senderismo y retos cooperativos para fortalecer perseverancia y confianza.</p>
+            </div>
+          </div>
+
+          <!-- Semana 5 -->
+          <div class="bg-white/5 rounded-[20px] overflow-hidden border border-white/10 flex flex-col">
+            <img src="src/images/semana5.webp?q=80&w=1200&auto=format&fit=crop" alt="El Laboratorio de los Sentidos" class="w-full h-48 object-cover">
+            <div class="p-6 flex-grow flex flex-col gap-2">
+              <span class="inline-block w-fit px-4 py-1 border border-white/40 rounded-full font-medium bg-white/10 text-xs">Semana 5 · 21 al 24 jul (puente)</span>
+              <h3 class="font-display text-xl font-bold text-yellow-400">El Laboratorio de los Sentidos</h3>
+              <p class="text-white/70 text-sm leading-relaxed">Aromas fascinantes y creaciones culinarias para explorar el olfato y el gusto.</p>
+            </div>
+          </div>
+
+          <!-- Semana 6 -->
+          <div class="bg-white/5 rounded-[20px] overflow-hidden border border-white/10 flex flex-col">
+            <img src="src/images/semana6.webp?q=80&w=1200&auto=format&fit=crop" alt="¡A la Mar!" class="w-full h-48 object-cover">
+            <div class="p-6 flex-grow flex flex-col gap-2">
+              <span class="inline-block w-fit px-4 py-1 border border-white/40 rounded-full font-medium bg-white/10 text-xs">Semana 6 · 27 al 31 de Julio</span>
+              <h3 class="font-display text-xl font-bold text-cyan-400">¡A la Mar!</h3>
+              <p class="text-white/70 text-sm leading-relaxed">Construcción de embarcaciones y desafíos marineros para cerrar el verano en equipo.</p>
+            </div>
+          </div>
+        </main>
+
+        <div class="text-center mt-12">
+          <a href="#reserva" class="inline-flex items-center gap-2 bg-whatsapp-green hover:bg-green-500 transition-colors px-8 py-4 rounded-full font-semibold text-white shadow-lg text-lg">
+            <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WhatsApp">
+            Quiero reservar una o varias semanas
+          </a>
+        </div>
+      </div>
+
+      <!-- ============ Testimonios ============ -->
+      <div id="testimonios" class="bg-white font-body text-slate-700 py-16 md:py-24 px-4 md:px-8">
+        <div class="max-w-4xl mx-auto text-center mb-14">
+          <span class="text-brand-red font-bold text-xs tracking-widest uppercase mb-4 inline-block">Historias reales</span>
+          <h2 class="font-display text-3xl md:text-5xl text-slate-800 font-bold leading-tight">Lo que dicen los niños y sus familias</h2>
+        </div>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="relative group">
+            <div class="bg-white transform -rotate-1 transition-transform group-hover:rotate-0 rounded-xl overflow-hidden shadow-sm">
+              <img src="src/images/dia1.png" class="w-full">
+            </div>
+            <div class="mt-6 px-2">
+              <span class="text-brand-green text-4xl font-serif leading-none block h-6">"</span>
+              <p class="text-sm leading-relaxed text-slate-600 italic">
+                Llegamos sin conocernos y con algo de timidez. Pero después de ayudarnos a cruzar el puente de troncos y compartir el almuerzo bajo los árboles, nos convertimos en mejores amigas.
               </p>
-              
+              <p class="text-xs font-bold text-slate-400 mt-2">Vale (9 años) y Juli (10 años)</p>
+            </div>
+          </div>
+
+          <div class="relative group">
+            <div class="bg-white transform rotate-1 transition-transform group-hover:rotate-0 rounded-xl overflow-hidden shadow-sm">
+              <img src="src/images/dia2.png" class="w-full">
+            </div>
+            <div class="mt-6 px-2">
+              <span class="text-brand-green text-4xl font-serif leading-none block h-6">"</span>
+              <p class="text-sm leading-relaxed text-slate-600 italic">
+                En casa se frustraba mucho si se salía de la línea al colorear. Verla aquí, disfrutando el proceso con tanta calma, me demostró cómo este lugar transforma el juego en pura seguridad interna.
+              </p>
+              <p class="text-xs font-bold text-slate-400 mt-2">Mamá de Mariana (7 años)</p>
+            </div>
+          </div>
+
+          <div class="relative group">
+            <div class="bg-white transform rotate-1 transition-transform group-hover:rotate-0 rounded-xl overflow-hidden shadow-sm">
+              <img src="src/images/dia3.png" class="w-full">
+            </div>
+            <div class="mt-6 px-2">
+              <span class="text-brand-green text-4xl font-serif leading-none block h-6">"</span>
+              <p class="text-sm leading-relaxed text-slate-600 italic">
+                Al principio me daba miedo intentar cosas nuevas sola y prefería quedarme mirando. Pero aquí descubrí que mi cuerpo es fuerte y capaz de superar cualquier reto.
+              </p>
+              <p class="text-xs font-bold text-slate-400 mt-2">Sofi (8 años)</p>
+            </div>
+          </div>
+
+          <div class="relative group">
+            <div class="bg-white transform -rotate-1 transition-transform group-hover:rotate-0 rounded-xl overflow-hidden shadow-sm">
+              <img src="src/images/dia4.png" class="w-full">
+            </div>
+            <div class="mt-6 px-2">
+              <span class="text-brand-green text-4xl font-serif leading-none block h-6">"</span>
+              <p class="text-sm leading-relaxed text-slate-600 italic">
+                En la ciudad todo va demasiado rápido y Mateo solía abrumarse con facilidad. Verlo aquí, regulando su propia energía, me demostró la magia de este entorno.
+              </p>
+              <p class="text-xs font-bold text-slate-400 mt-2">Mamá de Mateo (6 años)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ Fundadora ============ -->
+      <div class="min-h-screen bg-[#f7f6f4] flex items-center justify-center p-6 md:p-8 font-body relative overflow-hidden">
+        <div class="absolute left-10 top-1/2 -translate-y-1/2 w-10 h-3 bg-[#00aaff] rounded-full rotate-45 hidden lg:block"></div>
+        <div class="absolute right-10 top-1/2 -translate-y-1/2 w-4 h-4 bg-[#7e57c2] rounded-full hidden lg:block"></div>
+
+        <div class="max-w-6xl w-full bg-white rounded-[2rem] shadow-sm flex flex-col md:flex-row overflow-hidden relative">
+          <div class="md:w-1/2 h-[400px] md:h-auto relative">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200"
+              alt="Liz Monsalve Gómez"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="md:w-1/2 p-8 md:p-16 flex flex-col justify-center relative">
+            <div class="absolute -left-6 top-10 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border border-gray-100 hidden md:flex">
+              <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/star.svg" class="w-6 h-6 text-brand-dark" alt="icon" />
+            </div>
+
+            <div class="space-y-1 mb-8">
+              <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-dark tracking-tight uppercase">
+                Liz Monsalve Gómez
+              </h2>
+              <p class="text-brand-muted text-lg">Directora Fundadora</p>
+              <p class="text-brand-muted text-lg">Magister en terapia cognitiva</p>
+            </div>
+
+            <blockquote class="italic text-brand-muted text-xl leading-relaxed mb-10">
+              "Cada niño tiene un ritmo interno que el bosque sabe escuchar."
+            </blockquote>
+
+            <div class="text-gray-700 leading-relaxed text-lg">
+              <p>
+                <span class="font-bold text-gray-800">Liz Monsalve</span> ha dedicado su vida a entender la intersección entre la terapia ocupacional y el aprendizaje al aire libre. Su enfoque no es solo recreativo; es una intervención sutil y poderosa diseñada para que cada niño se sienta seguro en su propia piel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ Precios ============ -->
+      <div id="precios" class="bg-primary-purple font-body text-white pt-16 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center space-y-4 mb-12">
+          <span class="text-yellow-300 font-bold text-xs tracking-widest uppercase">Inversión</span>
+          <h2 class="font-display text-4xl font-bold">Reserva un lugar</h2>
+          <p class="text-white/90 text-lg">
+            ¡Inscríbete del <span class="font-bold">2 al 15 de junio</span> y obtén un <span class="font-bold text-yellow-300">5% de descuento</span> en el Campo de Verano Siete Sentidos!
+          </p>
+          <p class="text-white/90 text-lg">
+            ¡Toma 5 o 6 semanas del campo de verano y obtén un <span class="font-bold text-yellow-300">20% de descuento</span>!
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl p-8 flex flex-col text-slate-800 shadow-xl border border-white/20">
+            <div class="text-center mb-6">
+              <span class="text-sm font-medium bg-slate-100 px-4 py-1 rounded-full text-slate-600">Semana de puente (4 días)</span>
+              <div class="text-4xl font-bold mt-4 text-slate-900">$800.000</div>
+              <div class="text-slate-400 text-sm mt-1">Horario: 9:00 am a 2:00 pm</div>
+            </div>
+            <div class="flex-grow space-y-4 my-6 border-t border-slate-100 pt-6">
+              <div class="flex items-center gap-3 text-sm">
+                <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
+                <span>Toda la experiencia de 4 días</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
+                <span>Inscripción temprana 20% (Antes del 2 de Junio de 2026)</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
+                <span>Inscripción previa 5% (Del 2 al 15 de Junio de 2026)</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
+                <span>Para hermanos y primos 5%</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-400">
+                <img src="src/images/pricing-checkbox-g.svg" class="w-5 h-5 text-slate-300" alt="Check">
+                <span>*Almuerzo (opcional): $150.000</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-400">
+                <img src="src/images/pricing-checkbox-g.svg" class="w-5 h-5 text-slate-300" alt="Check">
+                <span>*Transporte (opcional): $200.000</span>
+              </div>
+            </div>
+            <a href="https://wa.me/573026016560?text=Hola%2C%20quiero%20reservar%20una%20semana%20de%20puente%20del%20Campo%20de%20Verano%20Siete%20Sentidos%202026" target="_blank" rel="noopener" class="w-full flex justify-center items-center gap-2 bg-whatsapp-green py-3 rounded-full font-bold text-white hover:opacity-90 transition-opacity">
+              Hablar con un asesor
+              <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WA">
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl p-8 flex flex-col text-slate-800 shadow-xl border-4 border-whatsapp-green/20 relative">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-orange text-white text-xs font-bold uppercase tracking-wide px-4 py-1 rounded-full shadow-md">Más elegida</span>
+            <div class="text-center mb-6">
+              <span class="text-sm font-medium bg-slate-100 px-4 py-1 rounded-full text-slate-600">Semana Completa (5 días)</span>
+              <div class="text-4xl font-bold mt-4 text-slate-900">$1.000.000</div>
+              <div class="text-slate-400 text-sm mt-1">Horario: 9:00 am a 2:00 pm</div>
+            </div>
+            <div class="flex-grow space-y-4 my-6 border-t border-slate-100 pt-6">
+              <div class="flex items-center gap-3 text-sm">
+                <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
+                <span>Toda la experiencia de 5 días</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
+                <span>Inscripción temprana 20% (Antes del 2 de Junio de 2026)</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
+                <span>Inscripción previa 5% (Del 2 al 15 de Junio de 2026)</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <img src="src/images/pricing-checkbox.svg" class="w-5 h-5 text-whatsapp-green" alt="Check">
+                <span>Para hermanos y primos 5%</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-400">
+                <img src="src/images/pricing-checkbox-g.svg" class="w-5 h-5 text-slate-300" alt="Check">
+                <span>*Almuerzo (opcional): $150.000</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-400">
+                <img src="src/images/pricing-checkbox-g.svg" class="w-5 h-5 text-slate-300" alt="Check">
+                <span>*Transporte (opcional): $200.000</span>
+              </div>
+            </div>
+            <a href="https://wa.me/573026016560?text=Hola%2C%20quiero%20reservar%20una%20semana%20completa%20del%20Campo%20de%20Verano%20Siete%20Sentidos%202026" target="_blank" rel="noopener" class="w-full flex justify-center items-center gap-2 bg-whatsapp-green py-3 rounded-full font-bold text-white hover:opacity-90 transition-opacity">
+              Hablar con un asesor
+              <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WA">
+            </a>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <p class="text-white/90 text-md">*Las rutas y el almuerzo no tienen descuento</p>
+        </div>
+      </div>
+
+      <!-- ============ FAQ ============ -->
+      <div id="faq" class="bg-white font-body text-slate-700 py-16 md:py-24 px-4">
+        <div class="max-w-3xl mx-auto">
+          <div class="text-center mb-12">
+            <span class="text-brand-red font-bold text-xs tracking-widest uppercase mb-4 inline-block">Preguntas frecuentes</span>
+            <h2 class="font-display text-3xl md:text-5xl text-slate-800 font-bold leading-tight">Resolvemos tus dudas</h2>
+          </div>
+
+          <div class="space-y-4">
+            <details class="group bg-stone-50 rounded-2xl border border-stone-100 p-6 open:shadow-sm">
+              <summary class="flex items-center justify-between cursor-pointer font-display font-semibold text-slate-800 text-lg list-none">
+                ¿Para qué edades está diseñado el campamento?
+                <span class="text-brand-orange text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="text-slate-600 mt-4 leading-relaxed">Está diseñado para niños y niñas de 3 a 12 años, con actividades adaptadas por grupos de edad para que cada experiencia sensorial sea significativa y segura para su etapa de desarrollo.</p>
+            </details>
+
+            <details class="group bg-stone-50 rounded-2xl border border-stone-100 p-6 open:shadow-sm">
+              <summary class="flex items-center justify-between cursor-pointer font-display font-semibold text-slate-800 text-lg list-none">
+                ¿Puedo inscribir a mi hijo solo por una semana?
+                <span class="text-brand-orange text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="text-slate-600 mt-4 leading-relaxed">Sí. Puedes elegir una sola semana temática, varias, o las 6 semanas completas. Al tomar 5 o 6 semanas obtienes un 20% de descuento sobre el valor total.</p>
+            </details>
+
+            <details class="group bg-stone-50 rounded-2xl border border-stone-100 p-6 open:shadow-sm">
+              <summary class="flex items-center justify-between cursor-pointer font-display font-semibold text-slate-800 text-lg list-none">
+                ¿Dónde queda la sede y cómo llego?
+                <span class="text-brand-orange text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="text-slate-600 mt-4 leading-relaxed">El campamento se realiza en la Hacienda Rincón de Teusacá, en La Calera. Ofrecemos ruta de transporte opcional; escríbenos por WhatsApp y un asesor te confirma horarios y puntos de recogida.</p>
+            </details>
+
+            <details class="group bg-stone-50 rounded-2xl border border-stone-100 p-6 open:shadow-sm">
+              <summary class="flex items-center justify-between cursor-pointer font-display font-semibold text-slate-800 text-lg list-none">
+                ¿El almuerzo está incluido?
+                <span class="text-brand-orange text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="text-slate-600 mt-4 leading-relaxed">El almuerzo es un servicio opcional con un valor adicional de $150.000. También puedes enviar la lonchera de tu hijo si lo prefieres.</p>
+            </details>
+
+            <details class="group bg-stone-50 rounded-2xl border border-stone-100 p-6 open:shadow-sm">
+              <summary class="flex items-center justify-between cursor-pointer font-display font-semibold text-slate-800 text-lg list-none">
+                ¿Qué pasa si llueve o el clima cambia?
+                <span class="text-brand-orange text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="text-slate-600 mt-4 leading-relaxed">La experiencia continúa: adaptamos las actividades a espacios cubiertos de la Hacienda sin perder el propósito sensorial de la jornada.</p>
+            </details>
+
+            <details class="group bg-stone-50 rounded-2xl border border-stone-100 p-6 open:shadow-sm">
+              <summary class="flex items-center justify-between cursor-pointer font-display font-semibold text-slate-800 text-lg list-none">
+                Mi hijo tiene una condición sensorial particular, ¿es apto el campamento?
+                <span class="text-brand-orange text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="text-slate-600 mt-4 leading-relaxed">El programa está diseñado desde la mirada de la terapia ocupacional, pensando en la diversidad sensorial de cada niño. Cuéntanos su caso por WhatsApp para que un asesor te oriente sobre el mejor acompañamiento.</p>
+            </details>
+
+            <details class="group bg-stone-50 rounded-2xl border border-stone-100 p-6 open:shadow-sm">
+              <summary class="flex items-center justify-between cursor-pointer font-display font-semibold text-slate-800 text-lg list-none">
+                ¿Cómo aseguro el cupo de mi hijo?
+                <span class="text-brand-orange text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p class="text-slate-600 mt-4 leading-relaxed">Completa el formulario de reserva más abajo o escríbenos directamente por WhatsApp. Un asesor te contactará para confirmar disponibilidad, semana(s) elegidas y forma de pago.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ Formulario de Reserva ============ -->
+    <div id="reserva" class="min-h-screen bg-cover bg-center flex items-center justify-center p-4 md:p-8" style="background-image: url('src/images/form-siete-sentidos.webp?q=80&w=2832&auto=format&fit=crop');">
+        <div class="max-w-6xl w-full rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+
+          <!-- Left Section: Image and Info -->
+          <div class="lg:w-1/2 relative min-h-[400px] lg:min-h-auto bg-black/45">
+            <div class="relative z-10 h-full p-8 md:p-12 flex flex-col justify-center text-white">
+              <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-6">
+                Reserva un lugar <br> en la naturaleza.
+              </h2>
+
+              <p class="font-body text-lg mb-10 opacity-90 leading-relaxed max-w-md">
+                ¡Inscríbete antes del 15 de junio y <span class="font-bold">obtén un descuento</span> en el Campo de Verano Siete Sentidos!
+              </p>
+
               <div class="space-y-6 font-body">
                 <div class="flex items-center gap-4">
                   <div class="bg-black/30 p-2 rounded-lg">
@@ -740,14 +653,14 @@
                   </div>
                   <span class="text-sm md:text-base">Hacienda Rincón de Teusacá, La Calera</span>
                 </div>
-                
+
                 <div class="flex items-center gap-4">
                   <div class="bg-black/30 p-2 rounded-lg">
                     <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/clock.svg" class="w-6 h-6 invert" alt="Time">
                   </div>
                   <span class="text-sm md:text-base">De 9:00 am a 2:00pm</span>
                 </div>
-                
+
                 <div class="flex items-center gap-4">
                   <div class="bg-black/30 p-2 rounded-lg">
                     <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/calendar.svg" class="w-6 h-6 invert" alt="Calendar">
@@ -759,36 +672,36 @@
           </div>
 
           <!-- Right Section: Form -->
-          <div class="lg:w-1/2 p-8 md:p-16 flex flex-col justify-center bg-white ">
+          <div class="lg:w-1/2 p-8 md:p-16 flex flex-col justify-center bg-white">
             <form class="space-y-8">
-              <!-- Name Input -->
               <div class="space-y-2">
                 <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider font-body">Nombre del acudiente</label>
                 <input type="text" placeholder="Tu nombre completo" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-primary transition-colors font-body text-gray-700">
               </div>
 
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Age Input -->
                 <div class="space-y-2">
                   <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider font-body">Edad del niño</label>
                   <input type="text" placeholder="Ej: 7" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-primary transition-colors font-body text-gray-700">
                 </div>
-                
-                <!-- Phone Input -->
+
                 <div class="space-y-2">
                   <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider font-body">Teléfono</label>
                   <input type="text" placeholder="+57" class="w-full border-b border-gray-300 py-2 focus:outline-none focus:border-primary transition-colors font-body text-gray-700">
                 </div>
               </div>
 
-              <!-- Week Select -->
               <div class="space-y-2">
-                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider font-body">Semana de interés</label>
+                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider font-body">Semana(s) de interés</label>
                 <div class="relative">
                   <select class="w-full bg-white border border-gray-300 rounded-xl px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary font-body text-gray-700 cursor-pointer">
-                    <option>Semana 1: Vuelo & Equilibrio</option>
-                    <option>Semana 2: Exploración & Tierra</option>
-                    <option>Semana 3: Agua & Reflejos</option>
+                    <option>Semana 1: El Bosque de los Misterios Perdidos</option>
+                    <option>Semana 2: Copa Mundial Sensorial</option>
+                    <option>Semana 3: Astrocamp: Episodios Espaciales</option>
+                    <option>Semana 4: Círculo de la Fortaleza</option>
+                    <option>Semana 5: El Laboratorio de los Sentidos</option>
+                    <option>Semana 6: ¡A la Mar!</option>
+                    <option>Las 6 semanas (20% de descuento)</option>
                   </select>
                   <div class="absolute inset-y-0 right-4 flex items-center pointer-events-none">
                     <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/chevron-down.svg" class="w-5 h-5 text-gray-400" alt="Select">
@@ -796,73 +709,26 @@
                 </div>
               </div>
 
-              <!-- Submit Button -->
               <button type="submit" class="w-full bg-primary hover:bg-orange-600 text-white font-display font-semibold py-4 rounded-full transition-all duration-300 shadow-lg shadow-primary/30 transform hover:-translate-y-1 active:scale-95">
                 Enviar y Reservar Cupo
               </button>
+
+              <a href="https://wa.me/573026016560?text=Hola%2C%20quiero%20reservar%20el%20cupo%20de%20mi%20hijo%20en%20el%20Campo%20de%20Verano%20Siete%20Sentidos%202026" target="_blank" rel="noopener" class="w-full flex items-center justify-center gap-2 border-2 border-whatsapp-green text-whatsapp-green font-bold py-3.5 rounded-full hover:bg-whatsapp-green hover:text-white transition-colors">
+                <img src="src/images/whatsapp.svg" class="w-5 h-5" alt="WhatsApp">
+                O escríbenos directo por WhatsApp
+              </a>
             </form>
           </div>
 
         </div>
-      </div>
-      <!--******** Seccion:fundadores **************-->
-
-      <div class="min-h-screen bg-[#f7f6f4] flex items-center justify-center p-6 md:p-8 font-body relative overflow-hidden">
-  
-      <!-- Decorative Elements -->
-      <div class="absolute left-10 top-1/2 -translate-y-1/2 w-10 h-3 bg-[#00aaff] rounded-full rotate-45 hidden lg:block"></div>
-      <div class="absolute right-10 top-1/2 -translate-y-1/2 w-4 h-4 bg-[#7e57c2] rounded-full hidden lg:block"></div>
-
-      <!-- Card Container -->
-      <div class="max-w-6xl w-full bg-white rounded-[2rem] shadow-sm flex flex-col md:flex-row overflow-hidden relative">
-        
-        <!-- Image Section -->
-        <div class="md:w-1/2 h-[400px] md:h-auto relative">
-          <img 
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200" 
-            alt="Liz Monsalve Gómez" 
-            class="absolute inset-0 w-full h-full object-cover"
-          />
-        </div>
-
-        <!-- Content Section -->
-        <div class="md:w-1/2 p-8 md:p-16 flex flex-col justify-center relative">
-          
-          <!-- Floating Star Icon -->
-          <div class="absolute -left-6 top-10 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border border-gray-100 hidden md:flex">
-            <img src="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/icons/star.svg" class="w-6 h-6 text-brand-dark" alt="icon" />
-          </div>
-
-          <div class="space-y-1 mb-8">
-            <h1 class="font-display text-2xl md:text-3xl font-bold text-brand-dark tracking-tight uppercase">
-              Liz Monsalve Gómez
-            </h1>
-            <p class="text-brand-muted text-lg">Directora Fundadora</p>
-            <p class="text-brand-muted text-lg">Magister en terapia cognitiva</p>
-          </div>
-
-          <blockquote class="italic text-brand-muted text-xl leading-relaxed mb-10">
-            "Cada niño tiene un ritmo interno que el bosque sabe escuchar."
-          </blockquote>
-
-          <div class="text-gray-700 leading-relaxed text-lg">
-            <p>
-              <span class="font-bold text-gray-800">Liz Monsalve</span> ha dedicado su vida a entender la intersección entre la terapia ocupacional y el aprendizaje al aire libre. Su enfoque no es solo recreativo; es una intervención sutil y poderosa diseñada para que cada niño se sienta seguro en su propia piel.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <!-- ************ Seccion: Footer **************-->
-
+    <!-- ============ Footer ============ -->
     <div class="bg-white px-6 py-12 font-body text-gray-700">
-      <!-- Main Grid Container -->
       <div class="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4">
-        
-        <!-- Item 1: Hablemos -->
+
         <div class="flex items-start gap-4">
-          <div class="">
+          <div>
             <img src="src/images/icon-phone.svg" class="w-6 h-6" alt="phone">
           </div>
           <div>
@@ -876,9 +742,8 @@
           </div>
         </div>
 
-        <!-- Item 2: Consulta -->
         <div class="flex items-start gap-4">
-          <div class="">
+          <div>
             <img src="src/images/icon-wps.svg" class="w-6 h-6" alt="whatsapp">
           </div>
           <div>
@@ -887,9 +752,8 @@
           </div>
         </div>
 
-        <!-- Item 3: Dónde estamos -->
         <div class="flex items-start gap-4">
-          <div class="">
+          <div>
             <img src="src/images/icon-direccion.svg" class="w-6 h-6 text-black" alt="location">
           </div>
           <div>
@@ -898,9 +762,8 @@
           </div>
         </div>
 
-        <!-- Item 4: Escríbenos -->
         <div class="flex items-start gap-4">
-          <div class="">
+          <div>
             <img src="src/images/icon-mail.svg" class="w-6 h-6" alt="email">
           </div>
           <div>
@@ -910,12 +773,23 @@
         </div>
       </div>
 
-      <!-- Divider and Copyright -->
       <div class="mx-auto max-w-7xl mt-12 pt-8 border-t border-gray-100">
         <p class="text-center text-sm text-gray-500">
           Derechos reservados. Siete Sentidos © 2026
         </p>
       </div>
     </div>
+
+    <!-- ============ Barra CTA fija móvil ============ -->
+    <div class="lg:hidden fixed bottom-0 left-0 w-full z-50 bg-white border-t border-slate-200 p-3 flex gap-3 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
+      <a href="#reserva" class="flex-1 text-center bg-brand-orange text-white font-display font-semibold py-3 rounded-full text-sm shadow-md">
+        Reservar cupo
+      </a>
+      <a href="https://wa.me/573026016560?text=Hola%2C%20quiero%20información%20del%20Campo%20de%20Verano%20Siete%20Sentidos%202026" target="_blank" rel="noopener" class="flex-1 text-center bg-whatsapp-green text-white font-display font-semibold py-3 rounded-full text-sm shadow-md flex items-center justify-center gap-2">
+        <img src="src/images/whatsapp.svg" class="w-4 h-4" alt="WhatsApp">
+        WhatsApp
+      </a>
+    </div>
+    <div class="lg:hidden h-20"></div>
   </body>
 </html>
