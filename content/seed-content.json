@@ -1,0 +1,286 @@
+{
+  "site": {
+    "seoTitle": "Siete Sentidos | Reserva el Campo de Verano 2026 — Cupos Limitados",
+    "seoDescription": "Inscribe a tu hijo al Campo de Verano Siete Sentidos: un espacio en la naturaleza diseñado desde la terapia ocupacional para madurar sensorial, emocional y socialmente. Del 22 de junio al 31 de julio, 2026. Cupos limitados.",
+    "ogTitle": "Siete Sentidos | Reserva el Campo de Verano 2026",
+    "ogDescription": "Muchos niños no necesitan más exigencia... necesitan más experiencias organizadoras. Reserva ahora el cupo de tu hijo.",
+    "ogImage": "https://sietesentidosexperienciasensorial.com/images/og-share-verano.jpg",
+    "canonicalUrl": "https://sietesentidosexperienciasensorial.com/",
+    "whatsappNumber": "573026016560",
+    "nav": [
+      { "label": "Metodología", "href": "#metodologia" },
+      { "label": "Universos", "href": "#semanas" },
+      { "label": "Historias", "href": "#testimonios" },
+      { "label": "Precios", "href": "#precios" },
+      { "label": "Preguntas", "href": "#faq" }
+    ]
+  },
+  "hero": {
+    "badge": "Cupos limitados · Verano 2026",
+    "title": "El verano en que tu hijo aprenda a regularse jugando en la naturaleza.",
+    "subtitle": "Un campo de verano diseñado desde la terapia ocupacional para la maduración sensorial, emocional y social de niños de 3 a 12 años.",
+    "dateLocation": "Del 22 de junio al 31 de julio, 2026 · Hacienda Rincón de Teusacá, La Calera",
+    "primaryCta": "Quiero reservar el cupo de mi hijo",
+    "secondaryCta": { "label": "Ver los 6 universos temáticos", "href": "#semanas" },
+    "discountNote": "5% de descuento inscribiéndote del 2 al 15 de junio · 20% de descuento tomando 5 o 6 semanas",
+    "backgroundImage": "/images/siete-sentidos-hero.webp"
+  },
+  "pain": {
+    "eyebrow": "¿Te suena familiar?",
+    "title": "Hay comportamientos que no son \"mala conducta\"... son necesidades sensoriales pidiendo ayuda.",
+    "cards": [
+      "Se frustra con facilidad, llora o explota ante cambios pequeños en su rutina.",
+      "Le cuesta compartir, esperar su turno o hacer amigos con naturalidad.",
+      "Pasa horas frente a una pantalla y se muestra ansioso o inquieto sin ella."
+    ],
+    "closing": "En Siete Sentidos transformamos la frustración en autonomía a través del juego dirigido y la inmersión consciente en la naturaleza, desde una mirada profesional de terapia ocupacional."
+  },
+  "methodology": {
+    "title": "Hay experiencias que maduran a un niño para toda la vida.",
+    "subtitle": "Jugar también es madurar. Un campo de verano enfocado en la maduración sensorial, emocional y social para niños de 3 a 12 años.",
+    "imageLeft": "/images/experiencias-siete-sentidos-l.webp",
+    "imageRight": "/images/experiencias-siete-sentidos-r.webp",
+    "cardEyebrow": "Empatía & Crecimiento",
+    "cardTitle": "Tal vez tu hijo está intentando decir algo...",
+    "cardParagraphs": [
+      "Muchos niños no necesitan más exigencia... necesitan más experiencias organizadoras. Los comportamientos que a veces nos frustran son a menudo señales de una necesidad sensorial no satisfecha.",
+      "En Siete Sentidos, transformamos la frustración en autonomía a través del juego dirigido y la inmersión consciente en la naturaleza."
+    ],
+    "sensesTitle": "Trabajamos los 7 sentidos, no solo los 5",
+    "sensesSubtitle": "Visual, Auditivo, Táctil, Propioceptivo, Vestibular, Olfativo y Gustativo.",
+    "senses": [
+      { "label": "Visual", "className": "bg-brand-purple/10 text-brand-purple" },
+      { "label": "Auditivo", "className": "bg-brand-blue/10 text-brand-blue" },
+      { "label": "Táctil", "className": "bg-brand-orange/10 text-brand-orange" },
+      { "label": "Propioceptivo", "className": "bg-brand-green/10 text-brand-green" },
+      { "label": "Vestibular", "className": "bg-brand-red/10 text-brand-red" },
+      { "label": "Olfativo", "className": "bg-brand-teal/10 text-emerald-700" },
+      { "label": "Gustativo", "className": "bg-brand-yellow/20 text-amber-700" },
+      { "label": "Social-Emocional", "className": "bg-slate-100 text-slate-600" }
+    ]
+  },
+  "daySchedule": {
+    "title": "Así se siente un día en Siete Sentidos",
+    "logo": "/images/logo-siete-sentidos.svg",
+    "items": [
+      {
+        "icon": "/images/icon-8am.svg",
+        "time": "08:30 AM",
+        "title": "Encuentro en el Bosque",
+        "description": "Dejamos atrás las pantallas para respirar el aire fresco de la Hacienda."
+      },
+      {
+        "icon": "/images/icon-10am.svg",
+        "time": "10:30 AM",
+        "title": "Juego de Regulación",
+        "description": "Barro en las manos, árboles y riachuelos: experiencias que organizan el sistema nervioso."
+      },
+      {
+        "icon": "/images/icon-1pm.svg",
+        "time": "01:00 PM",
+        "title": "Almuerzo Consciente",
+        "description": "Nutrición compartida bajo el dosel del bosque y descanso integrador."
+      },
+      {
+        "icon": "/images/icon-3pm.svg",
+        "time": "03:30 PM",
+        "title": "Regreso con Historias",
+        "description": "Mente tranquila, cuerpo regulado y ganas de volver a explorar mañana."
+      }
+    ]
+  },
+  "weeks": {
+    "title": "Un verano para explorar, jugar, crear, y crecer con todos sus sentidos",
+    "subtitle": "Elige una semana, varias, o todo el verano. Seis universos temáticos diseñados con propósito sensorial.",
+    "ctaLabel": "Quiero reservar una o varias semanas",
+    "items": [
+      {
+        "image": "/images/semana1.webp",
+        "badge": "Semana 1 · 22 al 26 de Junio",
+        "title": "El Bosque de los Misterios Perdidos",
+        "description": "Seguiremos pistas y descubriremos mensajes ocultos en la naturaleza. Énfasis en atención visual, auditiva y sistemas vestibular/propioceptivo.",
+        "accentClass": "text-yellow-400"
+      },
+      {
+        "image": "/images/semana2.webp",
+        "badge": "Semana 2 · 30 jun al 3 jul (puente)",
+        "title": "Copa Mundial Sensorial",
+        "description": "Circuitos y desafíos deportivos para fortalecer coordinación, equilibrio y trabajo en equipo.",
+        "accentClass": "text-cyan-400"
+      },
+      {
+        "image": "/images/semana3.webp",
+        "badge": "Semana 3 · 6 al 10 de Julio",
+        "title": "Astrocamp: Episodios Espaciales",
+        "description": "Una experiencia táctil de otro mundo entre texturas naturales y misiones de imaginación.",
+        "accentClass": "text-rose-400"
+      },
+      {
+        "image": "/images/semana4.webp",
+        "badge": "Semana 4 · 13 al 17 de Julio",
+        "title": "Círculo de la Fortaleza",
+        "description": "Circuitos motores, senderismo y retos cooperativos para fortalecer perseverancia y confianza.",
+        "accentClass": "text-cyan-400"
+      },
+      {
+        "image": "/images/semana5.webp",
+        "badge": "Semana 5 · 21 al 24 jul (puente)",
+        "title": "El Laboratorio de los Sentidos",
+        "description": "Aromas fascinantes y creaciones culinarias para explorar el olfato y el gusto.",
+        "accentClass": "text-yellow-400"
+      },
+      {
+        "image": "/images/semana6.webp",
+        "badge": "Semana 6 · 27 al 31 de Julio",
+        "title": "¡A la Mar!",
+        "description": "Construcción de embarcaciones y desafíos marineros para cerrar el verano en equipo.",
+        "accentClass": "text-cyan-400"
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Historias reales",
+    "title": "Lo que dicen los niños y sus familias",
+    "items": [
+      {
+        "image": "/images/dia1.png",
+        "quote": "Llegamos sin conocernos y con algo de timidez. Pero después de ayudarnos a cruzar el puente de troncos y compartir el almuerzo bajo los árboles, nos convertimos en mejores amigas.",
+        "author": "Vale (9 años) y Juli (10 años)",
+        "tilt": "left"
+      },
+      {
+        "image": "/images/dia2.png",
+        "quote": "En casa se frustraba mucho si se salía de la línea al colorear. Verla aquí, disfrutando el proceso con tanta calma, me demostró cómo este lugar transforma el juego en pura seguridad interna.",
+        "author": "Mamá de Mariana (7 años)",
+        "tilt": "right"
+      },
+      {
+        "image": "/images/dia3.png",
+        "quote": "Al principio me daba miedo intentar cosas nuevas sola y prefería quedarme mirando. Pero aquí descubrí que mi cuerpo es fuerte y capaz de superar cualquier reto.",
+        "author": "Sofi (8 años)",
+        "tilt": "right"
+      },
+      {
+        "image": "/images/dia4.png",
+        "quote": "En la ciudad todo va demasiado rápido y Mateo solía abrumarse con facilidad. Verlo aquí, regulando su propia energía, me demostró la magia de este entorno.",
+        "author": "Mamá de Mateo (6 años)",
+        "tilt": "left"
+      }
+    ]
+  },
+  "founder": {
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200",
+    "name": "Liz Monsalve Gómez",
+    "role": "Directora Fundadora",
+    "credential": "Magister en terapia cognitiva",
+    "quote": "Cada niño tiene un ritmo interno que el bosque sabe escuchar.",
+    "bio": "Liz Monsalve ha dedicado su vida a entender la intersección entre la terapia ocupacional y el aprendizaje al aire libre. Su enfoque no es solo recreativo; es una intervención sutil y poderosa diseñada para que cada niño se sienta seguro en su propia piel."
+  },
+  "pricing": {
+    "eyebrow": "Inversión",
+    "title": "Reserva un lugar",
+    "discountNotes": [
+      "¡Inscríbete del 2 al 15 de junio y obtén un 5% de descuento en el Campo de Verano Siete Sentidos!",
+      "¡Toma 5 o 6 semanas del campo de verano y obtén un 20% de descuento!"
+    ],
+    "footnote": "*Las rutas y el almuerzo no tienen descuento",
+    "plans": [
+      {
+        "label": "Semana de puente (4 días)",
+        "price": "$800.000",
+        "schedule": "Horario: 9:00 am a 2:00 pm",
+        "highlighted": false,
+        "features": [
+          { "text": "Toda la experiencia de 4 días", "muted": false },
+          { "text": "Inscripción temprana 20% (Antes del 2 de Junio de 2026)", "muted": false },
+          { "text": "Inscripción previa 5% (Del 2 al 15 de Junio de 2026)", "muted": false },
+          { "text": "Para hermanos y primos 5%", "muted": false },
+          { "text": "*Almuerzo (opcional): $150.000", "muted": true },
+          { "text": "*Transporte (opcional): $200.000", "muted": true }
+        ],
+        "ctaLabel": "Hablar con un asesor",
+        "whatsappMessage": "Hola, quiero reservar una semana de puente del Campo de Verano Siete Sentidos 2026"
+      },
+      {
+        "badge": "Más elegida",
+        "label": "Semana Completa (5 días)",
+        "price": "$1.000.000",
+        "schedule": "Horario: 9:00 am a 2:00 pm",
+        "highlighted": true,
+        "features": [
+          { "text": "Toda la experiencia de 5 días", "muted": false },
+          { "text": "Inscripción temprana 20% (Antes del 2 de Junio de 2026)", "muted": false },
+          { "text": "Inscripción previa 5% (Del 2 al 15 de Junio de 2026)", "muted": false },
+          { "text": "Para hermanos y primos 5%", "muted": false },
+          { "text": "*Almuerzo (opcional): $150.000", "muted": true },
+          { "text": "*Transporte (opcional): $200.000", "muted": true }
+        ],
+        "ctaLabel": "Hablar con un asesor",
+        "whatsappMessage": "Hola, quiero reservar una semana completa del Campo de Verano Siete Sentidos 2026"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Resolvemos tus dudas",
+    "items": [
+      {
+        "question": "¿Para qué edades está diseñado el campamento?",
+        "answer": "Está diseñado para niños y niñas de 3 a 12 años, con actividades adaptadas por grupos de edad para que cada experiencia sensorial sea significativa y segura para su etapa de desarrollo."
+      },
+      {
+        "question": "¿Puedo inscribir a mi hijo solo por una semana?",
+        "answer": "Sí. Puedes elegir una sola semana temática, varias, o las 6 semanas completas. Al tomar 5 o 6 semanas obtienes un 20% de descuento sobre el valor total."
+      },
+      {
+        "question": "¿Dónde queda la sede y cómo llego?",
+        "answer": "El campamento se realiza en la Hacienda Rincón de Teusacá, en La Calera. Ofrecemos ruta de transporte opcional; escríbenos por WhatsApp y un asesor te confirma horarios y puntos de recogida."
+      },
+      {
+        "question": "¿El almuerzo está incluido?",
+        "answer": "El almuerzo es un servicio opcional con un valor adicional de $150.000. También puedes enviar la lonchera de tu hijo si lo prefieres."
+      },
+      {
+        "question": "¿Qué pasa si llueve o el clima cambia?",
+        "answer": "La experiencia continúa: adaptamos las actividades a espacios cubiertos de la Hacienda sin perder el propósito sensorial de la jornada."
+      },
+      {
+        "question": "Mi hijo tiene una condición sensorial particular, ¿es apto el campamento?",
+        "answer": "El programa está diseñado desde la mirada de la terapia ocupacional, pensando en la diversidad sensorial de cada niño. Cuéntanos su caso por WhatsApp para que un asesor te oriente sobre el mejor acompañamiento."
+      },
+      {
+        "question": "¿Cómo aseguro el cupo de mi hijo?",
+        "answer": "Completa el formulario de reserva más abajo o escríbenos directamente por WhatsApp. Un asesor te contactará para confirmar disponibilidad, semana(s) elegidas y forma de pago."
+      }
+    ]
+  },
+  "reservation": {
+    "backgroundImage": "/images/form-siete-sentidos.webp",
+    "title": "Reserva un lugar en la naturaleza.",
+    "intro": "¡Inscríbete antes del 15 de junio y obtén un descuento en el Campo de Verano Siete Sentidos!",
+    "info": [
+      { "icon": "map-pin", "text": "Hacienda Rincón de Teusacá, La Calera" },
+      { "icon": "clock", "text": "De 9:00 am a 2:00pm" },
+      { "icon": "calendar", "text": "Temporada Verano 2026" }
+    ],
+    "weekOptions": [
+      "Semana 1: El Bosque de los Misterios Perdidos",
+      "Semana 2: Copa Mundial Sensorial",
+      "Semana 3: Astrocamp: Episodios Espaciales",
+      "Semana 4: Círculo de la Fortaleza",
+      "Semana 5: El Laboratorio de los Sentidos",
+      "Semana 6: ¡A la Mar!",
+      "Las 6 semanas (20% de descuento)"
+    ],
+    "submitLabel": "Enviar y Reservar Cupo",
+    "whatsappLabel": "O escríbenos directo por WhatsApp",
+    "whatsappMessage": "Hola, quiero reservar el cupo de mi hijo en el Campo de Verano Siete Sentidos 2026"
+  },
+  "footer": {
+    "phones": ["302 6016560", "302 5151036", "301 7669087", "601 6771564"],
+    "advisorPhone": "302 6016560",
+    "address": "carrera 14b 112-31 Santa Paula",
+    "email": "info@sietesentidosexperiencias.com",
+    "copyright": "Derechos reservados. Siete Sentidos © 2026"
+  }
+}
