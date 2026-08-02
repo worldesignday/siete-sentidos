@@ -32,7 +32,7 @@ export function Methodology({
         {/* ── Top: imagen + identificación ── */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <Reveal>
-            <div className="relative aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
+            <div className="relative aspect-square rounded-[40px] overflow-hidden shadow-2xl">
               <Image
                 src={methodology.imageLeft}
                 alt="Experiencias siete sentidos"
