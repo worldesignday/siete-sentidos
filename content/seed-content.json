@@ -61,7 +61,6 @@
   },
   "daySchedule": {
     "title": "Así se siente un día en Siete Sentidos",
-    "logo": "/images/logo-siete-sentidos.svg",
     "items": [
       {
         "icon": "/images/icon-8am.svg",

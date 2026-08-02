@@ -1,81 +1,110 @@
 import Image from "next/image";
-import { Heart } from "lucide-react";
 import type { SiteContent } from "@/lib/schema";
+import { Reveal } from "@/components/reveal";
 
-export function Methodology({ methodology }: { methodology: SiteContent["methodology"] }) {
+// Colores del diseño (Tailwind Play o5SnznAdGl), fijos por índice.
+const PAIN_CARD_BG = ["bg-[#efeef6]", "bg-[#fff8e1]", "bg-[#e6f4f1]"];
+
+const SENSE_CHIP = [
+  "bg-[#f0edf7] text-brand-purple",
+  "bg-[#e3f4f9] text-[#00acc1]",
+  "bg-[#fef4eb] text-[#f4511e]",
+  "bg-[#e8f4ef] text-[#43a047]",
+  "bg-[#feeef2] text-[#e91e63]",
+  "bg-[#effaf6] text-[#00897b]",
+  "bg-[#fff8e1] text-[#fbc02d]",
+  "bg-[#f0f4f9] text-[#546e7a]",
+];
+
+export function Methodology({
+  pain,
+  methodology,
+}: {
+  pain: SiteContent["pain"];
+  methodology: SiteContent["methodology"];
+}) {
   return (
-    <div id="metodologia" className="bg-white font-body text-slate-700">
-      <main className="max-w-7xl mx-auto px-6 py-12 md:py-20 relative overflow-hidden">
-        <div className="absolute top-10 left-10 md:left-20 shape-blue opacity-90 hidden sm:block" />
-        <div className="absolute top-1/3 right-10 w-3 h-3 bg-brand-purple rounded-full hidden sm:block" />
-
-        <header className="text-center mb-16 relative z-10">
-          <h2 className="font-display font-semibold text-4xl md:text-6xl text-emerald-600 leading-tight mb-6 max-w-5xl mx-auto tracking-tight">
-            {methodology.title}
-          </h2>
-          <p className="text-slate-500 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            {methodology.subtitle}
-          </p>
-        </header>
-
-        <div className="relative">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-            <div className="overflow-hidden rounded-[20px] transform transition hover:scale-[1.02] duration-300">
+    <div
+      id="metodologia"
+      className="bg-white font-body text-slate-700 py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+    >
+      <div className="max-w-6xl mx-auto">
+        {/* ── Top: imagen + identificación ── */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <Reveal>
+            <div className="relative aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
               <Image
                 src={methodology.imageLeft}
                 alt="Experiencias siete sentidos"
-                width={800}
-                height={600}
-                className="w-full object-cover min-h-[400px]"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
             </div>
+          </Reveal>
 
-            <div className="bg-stone-50 rounded-[20px] p-10 md:p-12 flex flex-col items-center text-center justify-center shadow-sm border border-stone-100">
-              <div className="mb-4">
-                <Heart className="w-6 h-6 text-brand-red opacity-80" />
-              </div>
-
-              <span className="text-brand-red font-bold text-xs tracking-widest uppercase mb-4">
-                {methodology.cardEyebrow}
+          <div className="space-y-6">
+            <div>
+              <span className="inline-block bg-red-50 text-red-500 text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-md mb-3">
+                {pain.eyebrow}
               </span>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#2d4031] leading-tight">
+                {pain.title}
+              </h2>
+            </div>
 
-              <h3 className="font-display text-[22px] md:text-[26px] text-slate-800 leading-tight mb-8">
-                {methodology.cardTitle}
-              </h3>
+            <div className="space-y-4">
+              {pain.cards.map((card, i) => (
+                <div key={i} className={`p-5 rounded-2xl ${PAIN_CARD_BG[i % PAIN_CARD_BG.length]}`}>
+                  <p className="text-sm leading-relaxed text-slate-600">{card}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
-              <div className="space-y-6 text-slate-600 leading-relaxed text-base">
+        {/* ── Texto central ── */}
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <p className="text-[#5d7d8b] text-lg leading-relaxed">{pain.closing}</p>
+        </div>
+
+        {/* ── Burbuja morada ── */}
+        <Reveal>
+          <div className="relative max-w-5xl mx-auto mb-20">
+            <div className="bg-[#5e4992] text-white p-8 md:p-12 rounded-[40px] relative z-10">
+              <h2 className="font-display text-2xl md:text-3xl font-semibold mb-6">
+                {methodology.title}
+              </h2>
+              <div className="space-y-6 text-purple-100 font-light max-w-4xl">
                 {methodology.cardParagraphs.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
               </div>
             </div>
-
-            <div className="overflow-hidden rounded-[20px] transform transition hover:scale-[1.02] duration-300">
-              <Image
-                src={methodology.imageRight}
-                alt="Experiencias siete sentidos"
-                width={800}
-                height={600}
-                className="w-full object-cover min-h-[400px]"
-              />
-            </div>
+            {/* Colita del bocadillo */}
+            <div className="absolute bottom-[-20px] right-24 w-12 h-12 bg-[#5e4992] rotate-45 z-0 hidden md:block" />
           </div>
-        </div>
+        </Reveal>
 
-        <div className="mt-16 md:mt-24 max-w-4xl mx-auto text-center">
-          <h3 className="font-display text-2xl md:text-3xl font-bold text-slate-800 mb-4">
+        {/* ── Los 7 sentidos ── */}
+        <div className="text-center">
+          <h2 className="font-display text-3xl font-bold text-[#2d4031] mb-2">
             {methodology.sensesTitle}
-          </h3>
-          <p className="text-slate-500 text-lg mb-10">{methodology.sensesSubtitle}</p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm font-medium">
-            {methodology.senses.map((sense) => (
-              <span key={sense.label} className={`rounded-full px-4 py-3 ${sense.className}`}>
+          </h2>
+          <p className="text-slate-500 mb-10">{methodology.sensesSubtitle}</p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            {methodology.senses.map((sense, i) => (
+              <div
+                key={sense.label}
+                className={`py-3 px-6 rounded-full font-medium text-sm ${SENSE_CHIP[i % SENSE_CHIP.length]}`}
+              >
                 {sense.label}
-              </span>
+              </div>
             ))}
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

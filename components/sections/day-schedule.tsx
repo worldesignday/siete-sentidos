@@ -6,16 +6,9 @@ export function DaySchedule({ daySchedule }: { daySchedule: SiteContent["daySche
   return (
     <div className="bg-bg-light font-body text-slate-700 py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-5xl mx-auto text-center mb-14">
-        <h2 className="font-display text-3xl md:text-5xl text-brand-green font-bold leading-tight mb-4">
+        <h2 className="font-display text-3xl md:text-5xl text-brand-green font-bold leading-tight">
           {daySchedule.title}
         </h2>
-        <Image
-          src={daySchedule.logo}
-          alt="Siete Sentidos"
-          width={180}
-          height={64}
-          className="mx-auto h-16 w-auto mt-6"
-        />
       </div>
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
         {daySchedule.items.map((item, i) => (

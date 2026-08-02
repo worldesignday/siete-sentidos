@@ -411,7 +411,6 @@ export function AdminEditor({ initial }: { initial: SiteContent }) {
 
         <Section title="Un día en...">
           <TextField name="daySchedule.title" label="Título" />
-          <TextField name="daySchedule.logo" label="Logo (ruta)" />
           <ScheduleEditor />
         </Section>
 

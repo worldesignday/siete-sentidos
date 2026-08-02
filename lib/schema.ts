@@ -66,7 +66,6 @@ export const contentSchema = z.object({
 
   daySchedule: z.object({
     title: z.string(),
-    logo: z.string(),
     items: z.array(
       z.object({
         icon: z.string(),

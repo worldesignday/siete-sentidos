@@ -1,7 +1,6 @@
 import { getContent } from "@/lib/content";
 import { Header } from "@/components/sections/header";
 import { Hero } from "@/components/sections/hero";
-import { PainPoints } from "@/components/sections/pain-points";
 import { Methodology } from "@/components/sections/methodology";
 import { DaySchedule } from "@/components/sections/day-schedule";
 import { Weeks } from "@/components/sections/weeks";
@@ -22,8 +21,7 @@ export default async function Home() {
     <>
       <Header site={content.site} />
       <Hero hero={content.hero} />
-      <PainPoints pain={content.pain} />
-      <Methodology methodology={content.methodology} />
+      <Methodology pain={content.pain} methodology={content.methodology} />
       <DaySchedule daySchedule={content.daySchedule} />
       <Weeks weeks={content.weeks} />
       <Testimonials testimonials={content.testimonials} />
