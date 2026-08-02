@@ -26,7 +26,6 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(site.canonicalUrl),
     alternates: { canonical: site.canonicalUrl },
     robots: { index: true, follow: true },
-    icons: { icon: [{ url: "/favicon.ico" }, { url: "/icon.svg", type: "image/svg+xml" }] },
     openGraph: {
       type: "website",
       url: site.canonicalUrl,

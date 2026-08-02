@@ -11,6 +11,7 @@ import { Faq } from "@/components/sections/faq";
 import { ReservationForm } from "@/components/sections/reservation-form";
 import { Footer } from "@/components/sections/footer";
 import { MobileCta } from "@/components/sections/mobile-cta";
+import { FloatingWhatsApp } from "@/components/sections/floating-whatsapp";
 
 export const dynamic = "force-dynamic";
 
@@ -31,6 +32,7 @@ export default async function Home() {
       <ReservationForm reservation={content.reservation} whatsappNumber={content.site.whatsappNumber} />
       <Footer footer={content.footer} />
       <MobileCta whatsappNumber={content.site.whatsappNumber} />
+      <FloatingWhatsApp whatsappNumber={content.site.whatsappNumber} />
     </>
   );
 }
